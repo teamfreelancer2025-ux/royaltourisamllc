@@ -2,12 +2,12 @@ import CarCard from "@/components/CarCard";
 import { Users } from "lucide-react";
 
 // Import car images
-import toyotaPrevia8Blue from "@/assets/cars/toyota-previa-8-blue.jpg";
+import toyotaPrevia8Complete from "@/assets/cars/toyota-previa-8-complete.jpg";
 
 const sevenSeaterCars = [
   {
     name: "Toyota Previa",
-    image: toyotaPrevia8Blue,
+    image: toyotaPrevia8Complete,
     seats: 8,
     price: "650 AED",
     additionalPrice: "100 AED additional",
