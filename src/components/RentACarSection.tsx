@@ -3,14 +3,14 @@ import CarCard from "@/components/CarCard";
 import { Car } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// Import car images
-import mercedesSClass from "@/assets/cars/mercedes-s-class.jpg";
-import bmw7Series from "@/assets/cars/bmw-7-series.jpg";
+// Import car images - SEO optimized with descriptive names
+import mercedesSClass from "@/assets/cars/mercedes-s-class-luxury-chauffeur-dubai.jpg";
+import bmw7Series from "@/assets/cars/bmw-7-series-executive-luxury-dubai.jpg";
 
-import audiA6 from "@/assets/cars/audi-a6.jpg";
+import audiA6 from "@/assets/cars/audi-a6-business-luxury-rental-dubai.jpg";
 import lexusES350 from "@/assets/cars/lexus-es350.jpg";
 import mercedesViano from "@/assets/cars/mercedes-viano.jpg";
-import toyotaPrevia8Silver from "@/assets/cars/toyota-previa-8-silver.jpg";
+import toyotaPrevia8Silver from "@/assets/cars/toyota-previa-8-seater-luxury-dubai.jpg";
 import nissanPatrol from "@/assets/cars/nissan-patrol.jpg";
 import gmcSuv from "@/assets/cars/gmc-suv.jpg";
 import kiaCarnival from "@/assets/cars/kia-carnival.jpg";
