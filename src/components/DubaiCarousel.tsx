@@ -2,18 +2,18 @@ import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 
-// Import Dubai images
+// Import Dubai images - SEO optimized for hotel transfers
 import dubaiHero from "@/assets/dubai-luxury-hero.jpg";
 import dubaiMarina from "@/assets/dubai-marina-night.jpg";
 import dubaiShopping from "@/assets/dubai-shopping-luxury.jpg";
 import dubaiDesert from "@/assets/dubai-desert-luxury.jpg";
-import dubaiPalm from "@/assets/dubai-palm-aerial.jpg";
-import dubaiAtlantis from "@/assets/dubai-atlantis-luxury.jpg";
+import dubaiPalm from "@/assets/dubai-palm-luxury-resort-transfers.jpg";
+import dubaiAtlantis from "@/assets/dubai-atlantis-vip-transfers.jpg";
 import dubaiGoldSouk from "@/assets/dubai-gold-souk.jpg";
 import dubaiBurjNight from "@/assets/dubai-burj-khalifa-night.jpg";
 import dubaiFountain from "@/assets/dubai-fountain-show.jpg";
 import dubaiMallLux from "@/assets/dubai-mall-luxury.jpg";
-import dubaiLuxHotel from "@/assets/dubai-luxury-hotel.jpg";
+import dubaiLuxHotel from "@/assets/dubai-luxury-hotel-transfers.jpg";
 
 const dubaiSlides = [
   {
