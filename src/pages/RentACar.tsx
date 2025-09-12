@@ -1,8 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import RentACarSection from "@/components/RentACarSection";
 
-import FifteenSeaterSection from "@/components/FifteenSeaterSection";
-
 const RentACar = () => {
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
@@ -99,13 +97,6 @@ const RentACar = () => {
               </p>
             </header>
             <RentACarSection />
-          </div>
-        </section>
-        
-        {/* Large Group Vehicles Section */}
-        <section className="py-20 bg-gradient-section backdrop-blur-sm">
-          <div className="container mx-auto px-4">
-            <FifteenSeaterSection />
           </div>
         </section>
       </main>

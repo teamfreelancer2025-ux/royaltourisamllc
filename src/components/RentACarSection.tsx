@@ -10,7 +10,7 @@ import bmw7Series from "@/assets/cars/bmw-7-series.jpg";
 import audiA6 from "@/assets/cars/audi-a6.jpg";
 import lexusES350 from "@/assets/cars/lexus-es350.jpg";
 import mercedesViano from "@/assets/cars/mercedes-viano.jpg";
-import toyotaPrevia8Professional from "@/assets/cars/toyota-previa-8-professional.jpg";
+import toyotaPrevia8Silver from "@/assets/cars/toyota-previa-8-silver.jpg";
 import toyotaHiace13 from "@/assets/cars/toyota-hiace-13.jpg";
 import mercedesSprinter15 from "@/assets/cars/mercedes-sprinter-15.jpg";
 import nissanPatrol from "@/assets/cars/nissan-patrol.jpg";
@@ -23,7 +23,7 @@ const carsByPrice = [
   // Budget Range
   {
     name: "Toyota Previa",
-    image: toyotaPrevia8Professional,
+    image: toyotaPrevia8Silver,
     seats: 8,
     price: "650 AED",
     additionalPrice: "100 AED additional",
