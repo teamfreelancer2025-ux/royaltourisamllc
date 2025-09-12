@@ -11,8 +11,6 @@ import audiA6 from "@/assets/cars/audi-a6.jpg";
 import lexusES350 from "@/assets/cars/lexus-es350.jpg";
 import mercedesViano from "@/assets/cars/mercedes-viano.jpg";
 import toyotaPrevia8Silver from "@/assets/cars/toyota-previa-8-silver.jpg";
-import toyotaHiace13 from "@/assets/cars/toyota-hiace-13.jpg";
-import mercedesSprinter15 from "@/assets/cars/mercedes-sprinter-15.jpg";
 import nissanPatrol from "@/assets/cars/nissan-patrol.jpg";
 import gmcSuv from "@/assets/cars/gmc-suv.jpg";
 import kiaCarnival from "@/assets/cars/kia-carnival.jpg";
@@ -115,27 +113,6 @@ const carsByPrice = [
   }
 ];
 
-// Large Group Vehicles (13-15 seater)
-const largeGroupVehicles = [
-  {
-    name: "Toyota Hiace",
-    image: toyotaHiace13,
-    seats: 13,
-    price: "650 AED",
-    additionalPrice: "100 AED additional",
-    extraHourRate: "65 AED/hr",
-    category: "13-seater" as const
-  },
-  {
-    name: "Mercedes Sprinter",
-    image: mercedesSprinter15,
-    seats: 15,
-    price: "2000 AED",
-    additionalPrice: "100 AED additional",
-    extraHourRate: "200 AED/hr",
-    category: "15-seater" as const
-  }
-];
 
 const RentACarSection = () => {
   return (
@@ -173,26 +150,6 @@ const RentACarSection = () => {
           </div>
         </div>
 
-        {/* Large Group Vehicles */}
-        <div className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
-            Large Group Vehicles
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {largeGroupVehicles.map((car, index) => (
-              <CarCard
-                key={`group-${index}`}
-                name={car.name}
-                image={car.image}
-                seats={car.seats}
-                price={car.price}
-                additionalPrice={car.additionalPrice}
-                extraHourRate={car.extraHourRate}
-                category={car.category}
-              />
-            ))}
-          </div>
-        </div>
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
