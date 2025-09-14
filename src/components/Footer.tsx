@@ -137,6 +137,23 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        {/* Developer Credit */}
+        <div className="border-t border-primary/10 pt-4 mt-4">
+          <div className="text-center">
+            <p className="text-xs text-muted-foreground">
+              Design and developed by{" "}
+              <a 
+                href="https://wa.me/919489060996" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 font-medium transition-colors"
+              >
+                Mhd Wasim
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
   );
