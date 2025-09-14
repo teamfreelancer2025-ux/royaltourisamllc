@@ -11,7 +11,7 @@ const sevenSeaterCars = [
     seats: 8,
     price: "650 AED",
     additionalPrice: "100 AED additional",
-    extraHourRate: "50 AED/hr",
+    extraHourRate: "75 AED/hr",
     category: "7-seater" as const
   }
 ];
@@ -86,6 +86,21 @@ const SevenSeaterSection = () => {
               Air conditioning, entertainment systems, and luxury finishes for maximum comfort during your journey.
             </p>
           </div>
+        </div>
+
+        {/* Developer Credit */}
+        <div className="mt-12 text-center">
+          <p className="text-sm text-muted-foreground">
+            Design and developed by{" "}
+            <a 
+              href="https://wa.me/919489060996" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 font-medium transition-colors"
+            >
+              Mhd Wasim
+            </a>
+          </p>
         </div>
       </div>
     </section>
