@@ -141,7 +141,7 @@ const Footer = () => {
         {/* Developer Credit */}
         <div className="border-t border-primary/10 pt-4 mt-4">
           <div className="text-center">
-            <p className="text-xs text-muted-foreground">
+            <p className="text-[10px] text-muted-foreground/70">
               Design and developed by{" "}
               <a 
                 href="https://wa.me/919489060996" 
