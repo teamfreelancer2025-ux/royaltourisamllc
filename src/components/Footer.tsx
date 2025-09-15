@@ -1,10 +1,11 @@
-import { Phone, MessageCircle, MapPin, Crown, Car, Users, Clock } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Crown, Car, Users, Clock, Linkedin } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-hero border-t border-primary/20">
+    <footer className="bg-gradient-hero border-t border-primary/20 relative z-50">
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {/* Company Info */}
@@ -69,10 +70,10 @@ const Footer = () => {
                 <div>
                   <p className="text-sm font-medium text-foreground">Call Anytime</p>
                   <a 
-                    href="tel:+971503441993" 
+                    href="tel:+971588373992" 
                     className="text-primary hover:text-primary/80 transition-colors font-semibold"
                   >
-                    +971 50 344 1993
+                    +971 58 837 3992
                   </a>
                 </div>
               </div>
@@ -82,12 +83,12 @@ const Footer = () => {
                 <div>
                   <p className="text-sm font-medium text-foreground">WhatsApp</p>
                   <a 
-                    href="https://wa.me/971503441993" 
+                    href="https://wa.me/971588373992" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary/80 transition-colors font-semibold"
                   >
-                    +971 50 344 1993
+                    +971 58 837 3992
                   </a>
                 </div>
               </div>
@@ -101,19 +102,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Quick Contact Buttons */}
-            <div className="grid grid-cols-1 gap-3">
-              <a href="tel:+971503441993" className="inline-block">
-                <button className="w-full bg-gradient-matte text-foreground border border-primary/30 hover:bg-gradient-glossy hover:text-primary-foreground px-4 py-2 rounded-lg font-semibold transition-all duration-300 text-sm shadow-matte hover:shadow-glow">
-                  Call Now
-                </button>
-              </a>
-              <a href="https://wa.me/971503441993" target="_blank" rel="noopener noreferrer" className="inline-block">
-                <button className="w-full bg-gradient-primary text-primary-foreground hover:shadow-glow hover:scale-105 px-4 py-2 rounded-lg font-semibold transition-all duration-300 text-sm shadow-luxury">
-                  WhatsApp
-                </button>
-              </a>
-            </div>
+            {/* Quick Contact Buttons removed as requested */}
           </div>
         </div>
 
@@ -140,7 +129,7 @@ const Footer = () => {
 
         {/* Developer Credit */}
         <div className="border-t border-primary/10 pt-4 mt-4">
-          <div className="text-center">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-center">
             <p className="text-[10px] text-muted-foreground/70">
               Design and developed by{" "}
               <a 
@@ -152,6 +141,17 @@ const Footer = () => {
                 Mhd Wasim
               </a>
             </p>
+            <div className="flex items-center gap-3">
+              <a href="tel:+919489060996" aria-label="Call Wasim" title="Call Wasim" className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary hover:bg-primary/15 hover:text-primary/80 transition-colors cursor-pointer">
+                <Phone className="w-4 h-4" />
+              </a>
+              <a href="https://wa.me/919489060996" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Wasim" title="WhatsApp Wasim" className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary hover:bg-primary/15 hover:text-primary/80 transition-colors cursor-pointer">
+                <MessageCircle className="w-4 h-4" />
+              </a>
+              <a href="https://www.linkedin.com/in/mohamed-wasim-itswasimhere----/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn Profile" className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary hover:bg-primary/15 hover:text-primary/80 transition-colors cursor-pointer">
+                <Linkedin className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

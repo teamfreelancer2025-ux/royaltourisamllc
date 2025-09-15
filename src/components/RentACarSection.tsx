@@ -159,12 +159,12 @@ const RentACarSection = () => {
               Contact us for special packages, long-term rentals, or group bookings. We'll create the perfect solution for your needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+971503441993" className="inline-block">
+              <a href="tel:+971588373992" className="inline-block">
                 <Button variant="matte" className="backdrop-blur-sm">
-                  Call +971 50 344 1993
+                  Call +971 58 837 3992
                 </Button>
               </a>
-              <a href="https://wa.me/971503441993" target="_blank" rel="noopener noreferrer" className="inline-block">
+              <a href="https://wa.me/971588373992" target="_blank" rel="noopener noreferrer" className="inline-block">
                 <Button variant="glossy" className="hover:animate-glow-pulse">
                   WhatsApp Us
                 </Button>

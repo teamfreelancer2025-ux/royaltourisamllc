@@ -132,7 +132,7 @@ const ReviewsSection = () => {
               <Button 
                 variant="glossy" 
                 size="lg" 
-                onClick={() => window.location.href = "tel:+971503441993"}
+                onClick={() => window.location.href = "tel:+971588373992"}
                 className="flex items-center justify-center gap-2 w-full sm:w-auto min-h-[48px]"
               >
                 <Phone className="w-4 h-4" />
@@ -141,7 +141,7 @@ const ReviewsSection = () => {
               <Button 
                 variant="whatsapp" 
                 size="lg" 
-                onClick={() => window.open("https://wa.me/971503441993", "_blank")}
+                onClick={() => window.open("https://wa.me/971588373992", "_blank")}
                 className="flex items-center justify-center gap-2 w-full sm:w-auto min-h-[48px]"
               >
                 <MessageCircle className="w-4 h-4" />

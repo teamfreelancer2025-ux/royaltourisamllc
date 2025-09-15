@@ -26,7 +26,7 @@ const FAQ = () => {
               "name": "How do I book a car with driver in Dubai?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "You can book instantly by calling +971 50 344 1993 or WhatsApp. We offer same-day booking and 24/7 service availability."
+                "text": "You can book instantly by calling +971 58 837 3992 or WhatsApp. We offer same-day booking and 24/7 service availability."
               }
             },
             {

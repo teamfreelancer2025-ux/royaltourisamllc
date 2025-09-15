@@ -8,7 +8,7 @@ const RentACar = () => {
         <title>Rent a Car Dubai with Driver - Mercedes, BMW, Toyota Fleet | Royal City Tourism</title>
         <meta 
           name="description" 
-          content="Rent luxury cars in Dubai with professional driver. Mercedes S-Class, BMW 7 Series, Toyota Hiace, Audi A6 available. Same-day booking, chauffeur service across UAE. Call +971 50 344 1993" 
+          content="Rent luxury cars in Dubai with professional driver. Mercedes S-Class, BMW 7 Series, Toyota Hiace, Audi A6 available. Same-day booking, chauffeur service across UAE. Call +971 58 837 3992" 
         />
         <meta name="keywords" content="rent a car Dubai with driver, Mercedes S-Class rental Dubai, BMW 7 Series rental, Toyota Hiace rental, Audi A6 rental Dubai, luxury car hire Dubai, chauffeur driven cars Dubai, premium vehicle rental UAE" />
         <link rel="canonical" href="/rent-a-car" />

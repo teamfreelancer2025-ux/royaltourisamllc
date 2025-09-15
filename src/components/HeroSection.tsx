@@ -4,11 +4,11 @@ import DubaiCarousel from "@/components/DubaiCarousel";
 
 const HeroSection = () => {
   const callNow = () => {
-    window.location.href = "tel:+971503441993";
+    window.location.href = "tel:+971588373992";
   };
 
   const openWhatsApp = () => {
-    window.open("https://wa.me/971503441993", "_blank");
+    window.open("https://wa.me/971588373992", "_blank");
   };
 
   return (
@@ -58,7 +58,7 @@ const HeroSection = () => {
                   className="flex items-center gap-3 w-full justify-center backdrop-blur-sm min-h-[52px] text-sm sm:text-base font-semibold"
                 >
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                  <span className="truncate">CALL NOW: +971 50 344 1993</span>
+                  <span className="truncate">CALL NOW: +971 58 837 3992</span>
                 </Button>
               </div>
             </div>

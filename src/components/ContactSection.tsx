@@ -4,11 +4,11 @@ import { Phone, MessageCircle, MapPin, Clock, Mail, Globe } from "lucide-react";
 
 const ContactSection = () => {
   const callNow = () => {
-    window.location.href = "tel:+971503441993";
+    window.location.href = "tel:+971588373992";
   };
 
   const openWhatsApp = () => {
-    window.open("https://wa.me/971503441993", "_blank");
+    window.open("https://wa.me/971588373992", "_blank");
   };
 
   return (
@@ -42,10 +42,10 @@ const ContactSection = () => {
                     <h4 className="font-semibold text-foreground mb-1 text-sm md:text-base">Phone</h4>
                     <p className="text-muted-foreground mb-2 text-xs md:text-sm">Call us anytime for instant booking</p>
                     <a 
-                      href="tel:+971503441993" 
+                      href="tel:+971588373992" 
                       className="text-primary font-semibold hover:text-primary/80 transition-colors text-sm md:text-base"
                     >
-                      +971 50 344 1993
+                      +971 58 837 3992
                     </a>
                   </div>
                 </div>
@@ -58,12 +58,12 @@ const ContactSection = () => {
                     <h4 className="font-semibold text-foreground mb-1 text-sm md:text-base">WhatsApp</h4>
                     <p className="text-muted-foreground mb-2 text-xs md:text-sm">Quick responses and instant quotes</p>
                     <a 
-                      href="https://wa.me/971503441993" 
+                      href="https://wa.me/971588373992" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-primary font-semibold hover:text-primary/80 transition-colors text-sm md:text-base"
                     >
-                      +971 50 344 1993
+                      +971 58 837 3992
                     </a>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ const ContactSection = () => {
                 className="bg-white text-primary hover:bg-white/90"
               >
                 <Phone className="w-5 h-5 mr-2" />
-                Call +971 50 344 1993
+                Call +971 58 837 3992
               </Button>
               <Button 
                 variant="whatsapp" 

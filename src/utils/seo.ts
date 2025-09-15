@@ -56,8 +56,8 @@ export const DUBAI_KEYWORDS = {
 export const SEO_CONFIG = {
   siteName: "Royal City Tourism LLC",
   siteUrl: "https://royalcitytourism.com",
-  phone: "+971503441993",
-  whatsapp: "+971503441993",
+  phone: "+971588373992",
+  whatsapp: "+971588373992",
   email: "info@royalcitytourism.com",
   businessAddress: "Dubai, UAE",
   foundingYear: "2014",

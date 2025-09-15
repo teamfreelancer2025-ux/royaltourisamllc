@@ -199,7 +199,7 @@ const DubaiCarousel = () => {
                   variant="matte" 
                   size="sm"
                   className="backdrop-blur-sm hover:backdrop-blur-md text-xs sm:text-sm w-full sm:w-auto"
-                  onClick={() => window.open("https://wa.me/971503441993?text=" + encodeURIComponent(`Hi! I'm interested in ${slide.action} - ${slide.title}. Can you provide more details?`), "_blank")}
+                  onClick={() => window.open("https://wa.me/971588373992?text=" + encodeURIComponent(`Hi! I'm interested in ${slide.action} - ${slide.title}. Can you provide more details?`), "_blank")}
                 >
                   {slide.action}
                 </Button>

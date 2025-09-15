@@ -30,7 +30,7 @@ const About = () => {
           "logo": "https://royalcitytourism.com/src/assets/logo-premium.png",
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+971503441993",
+            "telephone": "+971588373992",
             "contactType": "customer service",
             "areaServed": "AE",
             "availableLanguage": ["English", "Arabic"]

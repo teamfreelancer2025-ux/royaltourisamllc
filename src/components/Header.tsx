@@ -9,11 +9,11 @@ const Header = () => {
   const location = useLocation();
 
   const callNow = () => {
-    window.location.href = "tel:+971503441993";
+    window.location.href = "tel:+971588373992";
   };
 
   const openWhatsApp = () => {
-    window.open("https://wa.me/971503441993", "_blank");
+    window.open("https://wa.me/971588373992", "_blank");
   };
 
   return (

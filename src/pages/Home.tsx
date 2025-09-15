@@ -47,7 +47,7 @@ const Home = () => {
           "name": "Royal City Tourism LLC",
           "description": "Premium luxury car rental with chauffeur service in Dubai, UAE",
           "url": "https://royalcitytourism.com",
-          "telephone": "+971503441993",
+          "telephone": "+971588373992",
           "email": "info@royalcitytourism.com",
           "address": {
             "@type": "PostalAddress",

@@ -274,8 +274,8 @@ function generateOfflinePage() {
         
         <div class="contact-info">
           <h3>📱 Contact Us Directly:</h3>
-          <a href="tel:+971503441993" class="phone">📞 Call Now</a>
-          <a href="https://wa.me/971503441993" class="whatsapp">💬 WhatsApp</a>
+          <a href="tel:+971588373992" class="phone">📞 Call Now</a>
+          <a href="https://wa.me/971588373992" class="whatsapp">💬 WhatsApp</a>
         </div>
         
         <p>🌟 Dubai's Premier Luxury Car Rental Service</p>

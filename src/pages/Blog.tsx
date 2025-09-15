@@ -76,7 +76,7 @@ const blogPosts = [
 const Blog = () => {
   const handleReadMore = (slug: string) => {
     // In a real implementation, this would navigate to the full blog post
-    window.open(`https://wa.me/971503441993?text=${encodeURIComponent(`Hi! I'd like to read more about "${slug}". Can you provide more information about your Dubai car rental services?`)}`, "_blank");
+    window.open(`https://wa.me/971588373992?text=${encodeURIComponent(`Hi! I'd like to read more about "${slug}". Can you provide more information about your Dubai car rental services?`)}`, "_blank");
   };
 
   return (
@@ -215,7 +215,7 @@ const Blog = () => {
                 <Button 
                   variant="glossy" 
                   size="lg"
-                  onClick={() => window.open("https://wa.me/971503441993?text=" + encodeURIComponent("Hi! I'd like to book a luxury car rental with driver in Dubai. Can you provide availability and pricing?"), "_blank")}
+                  onClick={() => window.open("https://wa.me/971588373992?text=" + encodeURIComponent("Hi! I'd like to book a luxury car rental with driver in Dubai. Can you provide availability and pricing?"), "_blank")}
                   className="flex items-center gap-2"
                 >
                   <Users className="w-5 h-5" />

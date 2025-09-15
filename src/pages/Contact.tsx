@@ -5,12 +5,12 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
       <Helmet>
-        <title>Contact Dubai Car Rental - Book Now +971 50 344 1993 | Royal City Tourism</title>
+        <title>Contact Dubai Car Rental - Book Now +971 58 837 3992 | Royal City Tourism</title>
         <meta 
           name="description" 
-          content="Contact Royal City Tourism LLC for Dubai car rental with driver bookings. Call +971 50 344 1993 or WhatsApp for instant quotes. 24/7 luxury chauffeur service available." 
+          content="Contact Royal City Tourism LLC for Dubai car rental with driver bookings. Call +971 58 837 3992 or WhatsApp for instant quotes. 24/7 luxury chauffeur service available." 
         />
-        <meta name="keywords" content="contact Dubai car rental, book car rental Dubai, +971 50 344 1993, WhatsApp car rental Dubai, Royal City Tourism contact, luxury car booking Dubai, chauffeur service contact" />
+        <meta name="keywords" content="contact Dubai car rental, book car rental Dubai, +971 58 837 3992, WhatsApp car rental Dubai, Royal City Tourism contact, luxury car booking Dubai, chauffeur service contact" />
         <link rel="canonical" href="/contact" />
         
         {/* Contact Page Schema */}
@@ -23,12 +23,12 @@ const Contact = () => {
           "mainEntity": {
             "@type": "Organization",
             "name": "Royal City Tourism LLC",
-            "telephone": "+971503441993",
+            "telephone": "+971588373992",
             "email": "info@royalcitytourism.com",
             "contactPoint": [
               {
                 "@type": "ContactPoint",
-                "telephone": "+971503441993",
+                "telephone": "+971588373992",
                 "contactType": "customer service",
                 "areaServed": "AE",
                 "availableLanguage": ["English", "Arabic"],
@@ -36,7 +36,7 @@ const Contact = () => {
               },
               {
                 "@type": "ContactPoint",
-                "url": "https://wa.me/971503441993",
+                "url": "https://wa.me/971588373992",
                 "contactType": "customer service",
                 "name": "WhatsApp Support"
               }

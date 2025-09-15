@@ -15,11 +15,11 @@ interface CarCardProps {
 const CarCard = ({ name, image, seats, price, additionalPrice, extraHourRate, category }: CarCardProps) => {
   const openWhatsApp = () => {
     const message = `Hi! I'm interested in renting the ${name} (${seats} seater) for ${price}. Could you please provide more details?`;
-    window.open(`https://wa.me/971503441993?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/971588373992?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   const callNow = () => {
-    window.location.href = "tel:+971503441993";
+    window.location.href = "tel:+971588373992";
   };
 
   return (

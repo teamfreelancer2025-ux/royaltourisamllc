@@ -57,7 +57,7 @@ export const TechnicalSEO = () => {
         "addressLocality": "Dubai",
         "addressCountry": "AE"
       },
-      "telephone": "+971503441993",
+      "telephone": "+971588373992",
       "description": "Best luxury car rental service in Dubai with professional chauffeurs. Mercedes S-Class, BMW 7 Series, Toyota Hiace available 24/7 across UAE.",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",

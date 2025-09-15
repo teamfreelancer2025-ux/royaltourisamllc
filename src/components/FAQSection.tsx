@@ -117,7 +117,7 @@ const FAQSection = () => {
               <Button 
                 variant="glossy" 
                 size="lg" 
-                onClick={() => window.location.href = "tel:+971503441993"}
+                onClick={() => window.location.href = "tel:+971588373992"}
                 className="flex items-center gap-2"
               >
                 <Phone className="w-4 h-4" />
@@ -126,7 +126,7 @@ const FAQSection = () => {
               <Button 
                 variant="whatsapp" 
                 size="lg" 
-                onClick={() => window.open("https://wa.me/971503441993", "_blank")}
+                onClick={() => window.open("https://wa.me/971588373992", "_blank")}
                 className="flex items-center gap-2"
               >
                 <MessageCircle className="w-4 h-4" />
