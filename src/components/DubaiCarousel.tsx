@@ -19,7 +19,7 @@ const dubaiSlides = [
   {
     image: dubaiHero,
     title: "Burj Khalifa Luxury Experience",
-    description: "Experience Dubai's iconic skyline with our premium vehicle fleet",
+    description: "Best City Tour Packages Across UAE: Explore Dubai, Abu Dhabi, and Sharjah with all-inclusive deals and hassle-free ticket booking.",
     tag: "City Tours",
     action: "Book City Tour"
   },
