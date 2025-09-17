@@ -96,6 +96,7 @@ const AboutSection = () => {
                     src="/lovable-uploads/c6014215-e9f4-4713-bb60-c1db1db4bc6f.png" 
                     alt="Royal City Tourism Logo" 
                     className="w-16 lg:w-24 h-16 lg:h-24 object-contain"
+                    loading="lazy"
                   />
                 </div>
                 

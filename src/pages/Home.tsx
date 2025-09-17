@@ -8,27 +8,28 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
       <Helmet>
-        <title>Dubai Car Rental with Driver | Royal City Tourism LLC - #1 Luxury Chauffeur Service</title>
+        <title>Dubai Car Rental with Driver | Royal City Tourism UAE</title>
         <meta 
           name="description" 
-          content="Best Dubai car rental with driver service. Luxury Mercedes S-Class, BMW 7 Series, Toyota Hiace rentals. Professional chauffeur service across UAE. Book now +971 50 344 1993" 
+          content="Luxury car rental in Dubai with chauffeur. Mercedes S-Class, BMW 7 Series, Toyota Hiace. 24/7 service across UAE. Book now." 
         />
         <meta name="keywords" content="Dubai car rental with driver, luxury car rental Dubai, chauffeur service Dubai, Mercedes S-Class rental Dubai, BMW rental Dubai, Toyota Hiace rental, car with driver Dubai, premium vehicle rental UAE, luxury transportation Dubai" />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://royalcitytourism.com/" />
         
         {/* Enhanced Open Graph */}
-        <meta property="og:title" content="Dubai Car Rental with Driver | Royal City Tourism LLC" />
-        <meta property="og:description" content="Experience Dubai in ultimate luxury. Premium car rental with professional chauffeur service. Mercedes, BMW, Toyota fleet available 24/7." />
+        <meta property="og:title" content="Dubai Car Rental with Driver | Royal City Tourism UAE" />
+        <meta property="og:description" content="Experience Dubai in luxury. Premium car rental with chauffeur service. Mercedes, BMW, Toyota fleet available 24/7." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://royalcitytourism.com/" />
-        <meta property="og:image" content="/src/assets/dubai-luxury-hero.jpg" />
+        <meta property="og:url" content="https://royalcitytourism.com" />
+        <meta property="og:image" content="https://royalcitytourism.com/src/assets/dubai-luxury-hero.jpg" />
         <meta property="og:locale" content="en_US" />
         
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Dubai Car Rental with Driver | Royal City Tourism" />
+        <meta name="twitter:site" content="@royalcitytourism" />
+        <meta name="twitter:title" content="Dubai Car Rental with Driver | Royal City Tourism UAE" />
         <meta name="twitter:description" content="Luxury car rental Dubai with professional chauffeur. Mercedes, BMW, Toyota fleet. Book now!" />
-        <meta name="twitter:image" content="/src/assets/dubai-luxury-hero.jpg" />
+        <meta name="twitter:image" content="https://royalcitytourism.com/src/assets/dubai-luxury-hero.jpg" />
         
         {/* Additional SEO Meta */}
         <meta name="geo.region" content="AE-DU" />
@@ -39,15 +40,15 @@ const Home = () => {
         <meta name="distribution" content="global" />
         <meta name="rating" content="general" />
         
-        {/* Structured Data */}
+        {/* Structured Data - Local Business */}
         <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "CarRental",
-          "name": "Royal City Tourism LLC",
-          "description": "Premium luxury car rental with chauffeur service in Dubai, UAE",
+          "name": "Royal City Tourism L.L.C",
+          "description": "Luxury car rental in Dubai with chauffeur. Mercedes S-Class, BMW 7 Series, Toyota Hiace. 24/7 service across UAE. Book now.",
           "url": "https://royalcitytourism.com",
-          "telephone": "+971588373992",
+          "telephone": "+971 58 837 3992",
           "email": "info@royalcitytourism.com",
           "address": {
             "@type": "PostalAddress",
@@ -62,9 +63,7 @@ const Home = () => {
           },
           "openingHours": "Mo-Su 00:00-23:59",
           "priceRange": "$$$",
-          "areaServed": [
-            "Dubai", "Abu Dhabi", "Sharjah", "Ajman", "Fujairah", "Ras Al Khaimah", "Umm Al Quwain", "UAE"
-          ],
+          "areaServed": ["Dubai", "Abu Dhabi", "Sharjah"],
           "serviceType": "Luxury Car Rental with Professional Chauffeur Service",
           "hasOfferCatalog": {
             "@type": "OfferCatalog",

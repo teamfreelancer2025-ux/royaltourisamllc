@@ -30,12 +30,9 @@ const HeroSection = () => {
             {/* CTA Content - First on mobile */}
             <div className="w-full space-y-4 sm:space-y-6 order-1 lg:order-2 animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <div className="text-center lg:text-left">
-                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-bold text-foreground mb-3 sm:mb-4 leading-tight">
-                  Dubai Car Rental with Driver -{" "}
-                  <span className="bg-gradient-luxury bg-clip-text text-transparent">
-                    Ultimate Luxury Experience
-                  </span>
-                </h2>
+                <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-bold text-foreground mb-3 sm:mb-4 leading-tight">
+                  Dubai Car Rental with Driver - Royal City Tourism
+                </h1>
                 <p className="text-muted-foreground mb-4 sm:mb-6 md:mb-8 text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0">
                   Premium chauffeur-driven Mercedes, BMW & Toyota fleet across Dubai and UAE. Professional service since 2014.
                 </p>

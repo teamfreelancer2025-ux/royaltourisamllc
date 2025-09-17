@@ -18,39 +18,85 @@ const FAQ = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
-          "name": "Dubai Car Rental Frequently Asked Questions",
-          "description": "Common questions and answers about luxury car rental services in Dubai",
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "How do I book a car with driver in Dubai?",
+              "name": "What does the chauffeur service include?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "You can book instantly by calling +971 58 837 3992 or WhatsApp. We offer same-day booking and 24/7 service availability."
-              }
-            },
-            {
-              "@type": "Question", 
-              "name": "What areas do you cover in UAE?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We provide chauffeur services across Dubai, Abu Dhabi, Sharjah, Ajman, and all Emirates in UAE."
+                "text": "Our chauffeur service includes a professional, licensed driver who will handle all the driving while you relax. The service covers 10 hours within Dubai, with additional charges for other Emirates. All our chauffeurs are experienced, speak English, and are familiar with Dubai's roads and attractions."
               }
             },
             {
               "@type": "Question",
-              "name": "What luxury cars are available for rental?",
+              "name": "How far in advance should I book?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Our fleet includes Mercedes S-Class, BMW 7 Series, Audi A6, Toyota Hiace, Mercedes Sprinter, and over 200+ premium vehicles."
+                "text": "We recommend booking at least 24 hours in advance to ensure vehicle availability. However, we also accept same-day bookings subject to availability. For special events, holidays, or peak seasons, we suggest booking 3-7 days in advance."
               }
             },
             {
               "@type": "Question",
-              "name": "Do you provide professional chauffeurs?",
+              "name": "What are the additional charges for other Emirates?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, all our vehicles come with experienced, licensed, and professional chauffeurs who know Dubai routes expertly."
+                "text": "Travel to other Emirates (Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, Umm Al Quwain) incurs an additional charge of 100 AED per trip. This covers the extra distance and time required for inter-emirate travel."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are fuel and toll charges included in the price?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, all fuel costs and Salik (toll) charges within Dubai are included in our quoted prices. You don't need to worry about any additional fuel or toll expenses during your 10-hour rental period in Dubai."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I extend my rental period?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely! If you need the vehicle for more than 10 hours, you can extend the rental. Additional hours are charged at an hourly rate, which varies depending on the vehicle type. Please inform the chauffeur or call us to arrange the extension."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens if I'm running late for pickup?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We understand that schedules can change. Please call us as soon as possible if you're running late. We provide a 30-minute grace period for pickups. Beyond that, waiting time may be charged to ensure fairness to other customers and our chauffeurs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide child seats?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we can provide child seats upon request at the time of booking. We have various types of child seats available for different ages and sizes. Please specify the age and number of children when making your reservation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What's your cancellation policy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Bookings can be cancelled up to 6 hours before the scheduled pickup time without any charges. Cancellations made less than 6 hours before pickup may incur a cancellation fee. No-shows are charged the full amount."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are your vehicles insured?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, all our vehicles are fully insured with comprehensive coverage. This includes third-party liability, comprehensive insurance, and passenger insurance. You can travel with complete peace of mind knowing you're fully protected."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I request a specific vehicle model?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While we'll do our best to provide your preferred vehicle model, availability depends on our current fleet status and booking schedule. We guarantee the vehicle category you book (4-seater, 7-seater, etc.) and will provide a vehicle of equal or higher standard if your specific model isn't available."
               }
             }
           ]

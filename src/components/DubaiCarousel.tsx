@@ -172,6 +172,7 @@ const DubaiCarousel = () => {
             <div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${slide.image})` }}
+              loading="lazy"
             >
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent"></div>
             </div>
