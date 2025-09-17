@@ -21,6 +21,9 @@ const AboutSection = () => {
             We are one of Dubai's leading luxury car rental companies, providing chauffeur-driven premium vehicles 
             for tourists and businessmen visiting Dubai. Experience the difference of true luxury service.
           </p>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mt-4">
+            Best City Tour Packages Across UAE: Explore Dubai, Abu Dhabi, and Sharjah with all-inclusive deals and hassle-free ticket booking.
+          </p>
         </div>
 
         {/* Main Content Grid */}

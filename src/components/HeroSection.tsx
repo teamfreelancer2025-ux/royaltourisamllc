@@ -39,6 +39,9 @@ const HeroSection = () => {
                 <p className="text-muted-foreground mb-4 sm:mb-6 md:mb-8 text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0">
                   Premium chauffeur-driven Mercedes, BMW & Toyota fleet across Dubai and UAE. Professional service since 2014.
                 </p>
+                <p className="text-lg md:text-xl text-muted-foreground max-w-lg mx-auto lg:mx-0 mt-4">
+                  Best City Tour Packages Across UAE: Explore Dubai, Abu Dhabi, and Sharjah with all-inclusive deals and hassle-free ticket booking.
+                </p>
               </div>
 
               <div className="flex flex-col gap-3 sm:gap-4 max-w-md mx-auto lg:mx-0">

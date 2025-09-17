@@ -9,7 +9,7 @@ const sevenSeaterCars = [
     name: "Toyota Previa",
     image: toyotaPrevia8SeoOptimized,
     seats: 8,
-    price: "650 AED",
+    price: "600 AED",
     additionalPrice: "100 AED additional",
     extraHourRate: "75 AED/hr",
     category: "7-seater" as const

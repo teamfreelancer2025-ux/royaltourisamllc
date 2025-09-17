@@ -23,7 +23,7 @@ const carsByPrice = [
     name: "Toyota Previa",
     image: toyotaPrevia8Silver,
     seats: 8,
-    price: "650 AED",
+    price: "600 AED",
     additionalPrice: "100 AED additional",
     extraHourRate: "50 AED/hr",
     category: "8-seater" as const
