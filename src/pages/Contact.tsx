@@ -5,30 +5,30 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
       <Helmet>
-        <title>Contact Dubai Car Rental - Book Now +971 58 837 3992 | Royal City Tourism</title>
+        <title>Contact Royal City Tourism UAE | Dubai Car Rental</title>
         <meta 
           name="description" 
-          content="Contact Royal City Tourism LLC for Dubai car rental with driver bookings. Call +971 58 837 3992 or WhatsApp for instant quotes. 24/7 luxury chauffeur service available." 
+          content="Contact Royal City Tourism for Dubai car rental with driver. Call +971 58 837 3992 or WhatsApp for instant quotes. 24/7 luxury chauffeur service." 
         />
-        <meta name="keywords" content="contact Dubai car rental, book car rental Dubai, +971 58 837 3992, WhatsApp car rental Dubai, Royal City Tourism contact, luxury car booking Dubai, chauffeur service contact" />
-        <link rel="canonical" href="/contact" />
+        <meta name="keywords" content="contact Dubai car rental, book car rental Dubai, Royal City Tourism contact, luxury chauffeur service" />
+        <link rel="canonical" href="https://royalcitytourism.com/contact" />
         
         {/* Contact Page Schema */}
         <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ContactPage",
-          "name": "Contact Royal City Tourism LLC",
+          "name": "Contact Royal City Tourism L.L.C",
           "description": "Contact information for Dubai's premier car rental service",
           "mainEntity": {
             "@type": "Organization",
-            "name": "Royal City Tourism LLC",
-            "telephone": "+971588373992",
+            "name": "Royal City Tourism L.L.C",
+            "telephone": "+971 58 837 3992",
             "email": "info@royalcitytourism.com",
             "contactPoint": [
               {
                 "@type": "ContactPoint",
-                "telephone": "+971588373992",
+                "telephone": "+971 58 837 3992",
                 "contactType": "customer service",
                 "areaServed": "AE",
                 "availableLanguage": ["English", "Arabic"],

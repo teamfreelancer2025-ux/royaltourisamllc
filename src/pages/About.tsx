@@ -5,17 +5,17 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
       <Helmet>
-        <title>About Royal City Tourism LLC - Dubai's Premier Car Rental Company Since 2014</title>
+        <title>About Royal City Tourism UAE | Luxury Car Rental Dubai</title>
         <meta 
           name="description" 
-          content="Royal City Tourism LLC - Dubai's trusted luxury car rental company since 2014. 200+ premium vehicles, professional chauffeurs, 24/7 service. Licensed & insured operations across UAE." 
+          content="Royal City Tourism - Dubai's premier luxury car rental since 2014. Professional chauffeurs, 24/7 service, licensed & insured operations across UAE." 
         />
-        <meta name="keywords" content="about Royal City Tourism LLC, Dubai car rental company since 2014, luxury car rental history Dubai, licensed car rental UAE, premium chauffeur service Dubai, professional car rental company" />
-        <link rel="canonical" href="/about" />
+        <meta name="keywords" content="about Royal City Tourism, Dubai luxury car rental company, professional chauffeur service UAE, licensed car rental Dubai" />
+        <link rel="canonical" href="https://royalcitytourism.com/about" />
         
         {/* About Page Open Graph */}
-        <meta property="og:title" content="About Royal City Tourism LLC - Dubai's Premier Car Rental" />
-        <meta property="og:description" content="Discover our story: 10+ years of excellence in Dubai's luxury car rental industry. Trusted by thousands of satisfied customers." />
+        <meta property="og:title" content="About Royal City Tourism UAE | Luxury Car Rental Dubai" />
+        <meta property="og:description" content="Royal City Tourism - Dubai's premier luxury car rental since 2014. Professional chauffeurs, 24/7 service, licensed & insured operations across UAE." />
         <meta property="og:url" content="https://royalcitytourism.com/about" />
         
         {/* Organization Schema */}
@@ -23,14 +23,14 @@ const About = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Royal City Tourism LLC",
+          "name": "Royal City Tourism L.L.C",
           "alternateName": "Royal City Tourism",
-          "description": "Premier luxury car rental company in Dubai, UAE, operating since 2014",
+          "description": "Royal City Tourism - Dubai's premier luxury car rental since 2014. Professional chauffeurs, 24/7 service, licensed & insured operations across UAE.",
           "url": "https://royalcitytourism.com",
           "logo": "https://royalcitytourism.com/src/assets/logo-premium.png",
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+971588373992",
+            "telephone": "+971 58 837 3992",
             "contactType": "customer service",
             "areaServed": "AE",
             "availableLanguage": ["English", "Arabic"]

@@ -5,17 +5,17 @@ const RentACar = () => {
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
       <Helmet>
-        <title>Rent a Car Dubai with Driver - Mercedes, BMW, Toyota Fleet | Royal City Tourism</title>
+        <title>Rent a Car Dubai with Driver | Luxury Vehicles UAE</title>
         <meta 
           name="description" 
-          content="Rent luxury cars in Dubai with professional driver. Mercedes S-Class, BMW 7 Series, Toyota Hiace, Audi A6 available. Same-day booking, chauffeur service across UAE. Call +971 58 837 3992" 
+          content="Rent luxury cars in Dubai with chauffeur. Mercedes S-Class, BMW 7 Series, Toyota Hiace, Audi A6 available. 24/7 service across UAE." 
         />
-        <meta name="keywords" content="rent a car Dubai with driver, Mercedes S-Class rental Dubai, BMW 7 Series rental, Toyota Hiace rental, Audi A6 rental Dubai, luxury car hire Dubai, chauffeur driven cars Dubai, premium vehicle rental UAE" />
-        <link rel="canonical" href="/rent-a-car" />
+        <meta name="keywords" content="rent a car Dubai with driver, Mercedes S-Class rental Dubai, BMW 7 Series rental, Toyota Hiace rental, luxury car hire Dubai" />
+        <link rel="canonical" href="https://royalcitytourism.com/rent-a-car" />
         
         {/* Page-specific Open Graph */}
-        <meta property="og:title" content="Rent a Car Dubai with Driver - Premium Fleet Available" />
-        <meta property="og:description" content="Choose from our luxury fleet: Mercedes, BMW, Toyota, Audi. Professional chauffeur service included. Book your premium car rental now!" />
+        <meta property="og:title" content="Rent a Car Dubai with Driver | Luxury Vehicles UAE" />
+        <meta property="og:description" content="Rent luxury cars in Dubai with chauffeur. Mercedes S-Class, BMW 7 Series, Toyota Hiace, Audi A6 available. 24/7 service across UAE." />
         <meta property="og:url" content="https://royalcitytourism.com/rent-a-car" />
         
         {/* Structured Data for Car Rental Service */}
@@ -27,7 +27,7 @@ const RentACar = () => {
           "description": "Premium luxury car rental service in Dubai with professional chauffeur drivers",
           "provider": {
             "@type": "Organization",
-            "name": "Royal City Tourism LLC"
+            "name": "Royal City Tourism L.L.C"
           },
           "areaServed": "Dubai, UAE",
           "serviceType": "Car Rental with Driver",

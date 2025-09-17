@@ -82,13 +82,13 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
       <Helmet>
-        <title>Dubai Car Rental Blog - Tips, Guides & Expert Advice | Royal City Tourism</title>
+        <title>Dubai Car Rental Blog | Tips & Guides by Royal City Tourism UAE</title>
         <meta 
           name="description" 
-          content="Read expert articles about Dubai car rental, luxury vehicle guides, travel tips, and chauffeur service insights. Stay updated with Dubai's premium transportation trends." 
+          content="Expert articles on luxury car rental, chauffeur services & travel tips in Dubai. Stay informed with Royal City Tourism's premium transportation insights." 
         />
-        <meta name="keywords" content="Dubai car rental blog, luxury car rental tips, Dubai travel guide, chauffeur service advice, UAE transportation blog, Mercedes BMW rental Dubai" />
-        <link rel="canonical" href="/blog" />
+        <meta name="keywords" content="Dubai car rental blog, luxury car rental tips, Dubai travel guides, chauffeur service insights, UAE transportation" />
+        <link rel="canonical" href="https://royalcitytourism.com/blog" />
         
         {/* Blog Schema */}
         <script type="application/ld+json">
@@ -96,11 +96,11 @@ const Blog = () => {
           "@context": "https://schema.org",
           "@type": "Blog",
           "name": "Royal City Tourism Dubai Car Rental Blog",
-          "description": "Expert insights on luxury car rental and chauffeur services in Dubai",
+          "description": "Expert articles on luxury car rental, chauffeur services & travel tips in Dubai. Stay informed with Royal City Tourism's premium transportation insights.",
           "url": "https://royalcitytourism.com/blog",
           "publisher": {
             "@type": "Organization",
-            "name": "Royal City Tourism LLC"
+            "name": "Royal City Tourism L.L.C"
           },
           "blogPost": blogPosts.map(post => ({
             "@type": "BlogPosting",
@@ -109,11 +109,11 @@ const Blog = () => {
             "datePublished": post.date,
             "author": {
               "@type": "Organization", 
-              "name": "Royal City Tourism LLC"
+              "name": "Royal City Tourism L.L.C"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Royal City Tourism LLC"
+              "name": "Royal City Tourism L.L.C"
             },
             "mainEntityOfPage": `https://royalcitytourism.com/blog/${post.slug}`,
             "image": post.image,

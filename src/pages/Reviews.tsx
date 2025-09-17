@@ -5,20 +5,20 @@ const Reviews = () => {
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
       <Helmet>
-        <title>Customer Reviews - 4.9★ Dubai Car Rental Testimonials | Royal City Tourism</title>
+        <title>Customer Reviews | Royal City Tourism UAE - Dubai Car Rental</title>
         <meta 
           name="description" 
-          content="Read 150+ genuine customer reviews about Royal City Tourism's Dubai car rental with driver service. 4.9/5 rating. See why clients choose our luxury chauffeur service." 
+          content="Read 150+ genuine customer reviews for Royal City Tourism's Dubai car rental with driver service. 4.9/5 rating. Experience our luxury chauffeur service." 
         />
-        <meta name="keywords" content="Dubai car rental reviews, customer testimonials Dubai, luxury car rental feedback, Royal City Tourism reviews, chauffeur service reviews Dubai, 5 star car rental Dubai" />
-        <link rel="canonical" href="/reviews" />
+        <meta name="keywords" content="Dubai car rental reviews, customer testimonials Dubai, luxury chauffeur service feedback, Royal City Tourism reviews" />
+        <link rel="canonical" href="https://royalcitytourism.com/reviews" />
         
         {/* Reviews Schema Markup */}
         <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Royal City Tourism LLC",
+          "name": "Royal City Tourism L.L.C",
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
