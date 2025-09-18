@@ -27,7 +27,7 @@ const About = () => {
           "alternateName": "Royal City Tourism",
           "description": "Royal City Tourism - Dubai's premier luxury car rental since 2014. Professional chauffeurs, 24/7 service, licensed & insured operations across UAE.",
           "url": "https://royalcitytourism.com",
-          "logo": "https://royalcitytourism.com/src/assets/logo-premium.png",
+          "logo": "https://royalcitytourism.com/src/assets/logo-premium.webp",
           "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+971 58 837 3992",

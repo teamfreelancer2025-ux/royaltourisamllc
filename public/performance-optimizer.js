@@ -24,10 +24,10 @@
   // Preload Critical Resources
   function preloadCriticalResources() {
     const criticalResources = [
-      '/src/assets/dubai-luxury-hero.jpg',
-      '/src/assets/cars/mercedes-s-class.jpg',
-      '/src/assets/cars/bmw-7-series.jpg',
-      '/src/assets/logo-premium.png'
+      '/src/assets/dubai-luxury-hero.webp',
+      '/src/assets/cars/mercedes-s-class.webp',
+      '/src/assets/cars/bmw-7-series.webp',
+      '/src/assets/logo-premium.webp'
     ];
 
     criticalResources.forEach(resource => {

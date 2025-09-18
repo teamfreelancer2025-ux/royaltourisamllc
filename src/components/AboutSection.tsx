@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Crown, Star, Shield, Users, Clock, Award } from "lucide-react";
-import dubaiLuxuryDesert from "@/assets/dubai-luxury-desert.jpg";
-import luxuryCarsMarina from "@/assets/luxury-cars-marina.jpg";
+import dubaiLuxuryDesert from "@/assets/dubai-luxury-desert.webp";
+import luxuryCarsMarina from "@/assets/luxury-cars-marina.webp";
 
 const AboutSection = () => {
   return (
@@ -93,7 +93,7 @@ const AboutSection = () => {
                 {/* Logo with square background */}
                 <div className="inline-flex items-center justify-center w-24 lg:w-32 h-24 lg:h-32 bg-white/20 backdrop-blur-sm rounded-xl lg:rounded-2xl border border-white/30 mb-4 lg:mb-6">
                   <img 
-                    src="/lovable-uploads/c6014215-e9f4-4713-bb60-c1db1db4bc6f.png" 
+                    src="/lovable-uploads/c6014215-e9f4-4713-bb60-c1db1db4bc6f.webp" 
                     alt="Royal City Tourism Logo" 
                     className="w-16 lg:w-24 h-16 lg:h-24 object-contain"
                     loading="lazy"

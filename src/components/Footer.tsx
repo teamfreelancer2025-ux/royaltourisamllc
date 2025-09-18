@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/5c339dab-1858-4a78-a443-4d64375fdf88.png" 
+                src="/lovable-uploads/5c339dab-1858-4a78-a443-4d64375fdf88.webp" 
                 alt="Royal City Tourism LLC Original Logo" 
                 className="h-12 w-auto shadow-glow"
               />

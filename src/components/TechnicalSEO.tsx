@@ -29,9 +29,9 @@ export const TechnicalSEO = () => {
     };
 
     // Preload critical images
-    addResourceHint('preload', '/src/assets/dubai-luxury-hero.jpg', 'image');
-    addResourceHint('preload', '/src/assets/cars/mercedes-s-class.jpg', 'image');
-    addResourceHint('preload', '/src/assets/cars/bmw-7-series.jpg', 'image');
+    addResourceHint('preload', '/src/assets/dubai-luxury-hero.webp', 'image');
+    addResourceHint('preload', '/src/assets/cars/mercedes-s-class.webp', 'image');
+    addResourceHint('preload', '/src/assets/cars/bmw-7-series.webp', 'image');
 
     // Add structured data for current page
     const addStructuredData = (data: any, id: string) => {

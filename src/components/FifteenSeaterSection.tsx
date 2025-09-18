@@ -3,8 +3,8 @@ import { Users, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Import car images
-import toyotaHiace13 from "@/assets/cars/toyota-hiace-13.jpg";
-import mercedesSprinter15 from "@/assets/cars/mercedes-sprinter-15.jpg";
+import toyotaHiace13 from "@/assets/cars/toyota-hiace-13.webp";
+import mercedesSprinter15 from "@/assets/cars/mercedes-sprinter-15.webp";
 
 const fifteenSeaterCars = [
   {

@@ -21,7 +21,7 @@ const Home = () => {
         <meta property="og:description" content="Experience Dubai in luxury. Premium car rental with chauffeur service. Mercedes, BMW, Toyota fleet available 24/7." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://royalcitytourism.com" />
-        <meta property="og:image" content="https://royalcitytourism.com/src/assets/dubai-luxury-hero.jpg" />
+        <meta property="og:image" content="https://royalcitytourism.com/src/assets/dubai-luxury-hero.webp" />
         <meta property="og:locale" content="en_US" />
         
         {/* Twitter Cards */}
@@ -29,7 +29,7 @@ const Home = () => {
         <meta name="twitter:site" content="@royalcitytourism" />
         <meta name="twitter:title" content="Dubai Car Rental with Driver | Royal City Tourism UAE" />
         <meta name="twitter:description" content="Luxury car rental Dubai with professional chauffeur. Mercedes, BMW, Toyota fleet. Book now!" />
-        <meta name="twitter:image" content="https://royalcitytourism.com/src/assets/dubai-luxury-hero.jpg" />
+        <meta name="twitter:image" content="https://royalcitytourism.com/src/assets/dubai-luxury-hero.webp" />
         
         {/* Additional SEO Meta */}
         <meta name="geo.region" content="AE-DU" />

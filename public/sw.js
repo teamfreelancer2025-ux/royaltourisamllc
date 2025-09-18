@@ -8,12 +8,12 @@ const DYNAMIC_CACHE = 'dynamic-v1.2';
 // Assets to cache immediately
 const STATIC_ASSETS = [
   '/',
-  '/src/assets/logo-premium.png',
-  '/src/assets/dubai-luxury-hero.jpg',
-  '/src/assets/cars/mercedes-s-class.jpg',
-  '/src/assets/cars/bmw-7-series.jpg',
-  '/src/assets/cars/toyota-hiace-13.jpg',
-  '/favicon.png',
+  '/src/assets/logo-premium.webp',
+  '/src/assets/dubai-luxury-hero.webp',
+  '/src/assets/cars/mercedes-s-class.webp',
+  '/src/assets/cars/bmw-7-series.webp',
+  '/src/assets/cars/toyota-hiace-13.webp',
+  '/favicon.webp',
   '/robots.txt',
   '/sitemap.xml'
 ];
@@ -315,8 +315,8 @@ self.addEventListener('push', event => {
     
     const options = {
       body: notificationData.body || 'Your Dubai car rental booking has been confirmed!',
-      icon: '/favicon.png',
-      badge: '/favicon.png',
+      icon: '/favicon.webp',
+      badge: '/favicon.webp',
       vibrate: [100, 50, 100],
       data: {
         dateOfArrival: Date.now(),
@@ -326,12 +326,12 @@ self.addEventListener('push', event => {
         {
           action: 'explore',
           title: 'View Booking',
-          icon: '/favicon.png'
+          icon: '/favicon.webp'
         },
         {
           action: 'close',
           title: 'Close',
-          icon: '/favicon.png'
+          icon: '/favicon.webp'
         }
       ]
     };

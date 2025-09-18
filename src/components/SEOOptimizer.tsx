@@ -18,7 +18,7 @@ export const SEOOptimizer = ({
   description,
   keywords = [],
   canonicalUrl,
-  ogImage = `${SEO_CONFIG.siteUrl}/src/assets/dubai-luxury-hero.jpg`,
+  ogImage = `${SEO_CONFIG.siteUrl}/src/assets/dubai-luxury-hero.webp`,
   ogType = "website",
   structuredData = [],
   hreflangs = [],

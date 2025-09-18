@@ -2,7 +2,7 @@ import CarCard from "@/components/CarCard";
 import { Users } from "lucide-react";
 
 // Import car images
-import toyotaPrevia8SeoOptimized from "@/assets/cars/toyota-previa-8-seater-luxury-dubai.jpg";
+import toyotaPrevia8SeoOptimized from "@/assets/cars/toyota-previa-8-seater-luxury-dubai.webp";
 
 const sevenSeaterCars = [
   {
