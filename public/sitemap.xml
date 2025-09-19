@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
   <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://royalcitytourism.com/</loc>
-    <lastmod>2025-09-14</lastmod>
+    <lastmod>2024-09-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -30,7 +29,7 @@
   <!-- Rent a Car Page - High Priority -->
   <url>
     <loc>https://royalcitytourism.com/rent-a-car</loc>
-    <lastmod>2025-09-14</lastmod>
+    <lastmod>2024-09-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -58,7 +57,7 @@
   <!-- About Page -->
   <url>
     <loc>https://royalcitytourism.com/about</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2024-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -66,7 +65,7 @@
   <!-- Contact Page -->
   <url>
     <loc>https://royalcitytourism.com/contact</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2024-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -74,7 +73,7 @@
   <!-- FAQ Page -->
   <url>
     <loc>https://royalcitytourism.com/faq</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2024-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -82,7 +81,7 @@
   <!-- Reviews Page -->
   <url>
     <loc>https://royalcitytourism.com/reviews</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2024-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -90,7 +89,7 @@
   <!-- Blog Page -->
   <url>
     <loc>https://royalcitytourism.com/blog</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2024-09-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
