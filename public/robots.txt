@@ -1,0 +1,42 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://royalcitytourism.com/sitemap.xml
+
+# Allow search engines to crawl important pages
+Allow: /
+Allow: /about
+Allow: /rent-a-car
+Allow: /contact
+Allow: /faq
+Allow: /reviews
+
+# Block crawling of sensitive areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*?*
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# User-agent specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
