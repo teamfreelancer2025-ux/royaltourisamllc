@@ -12,70 +12,70 @@ const dubaiSlides = [
     action: "Book City Tour"
   },
   {
-    image: "/carousel-images/dubai-burj-khalifa-night.webp", // Original: "/dubai-burj-khalifa-night.webp",
+    image: "/carousel-images/dubai-burj-khalifa-night.webp", 
     title: "Burj Khalifa Night Magic",
     description: "Witness the world's tallest building illuminated in luxury comfort",
     tag: "Night Tours",
     action: "Book Night Tour"
   },
   {
-    image: "/carousel-images/dubai-fountain-show.webp", // Original: "/dubai-fountain-show.webp",
+    image: "/carousel-images/dubai-fountain-show.webp", 
     title: "Dubai Fountain Spectacular",
     description: "Premium front-row access to the world's largest fountain show",
     tag: "VIP Experience",
     action: "Book VIP Experience"
   },
   {
-    image: "/carousel-images/dubai-palm-luxury-resort-transfers.jpg", // Original: "/dubai-palm-luxury-resort-transfers.webp",
+    image: "/carousel-images/dubai-palm-luxury-resort-transfers.jpg", 
     title: "Palm Jumeirah Paradise",
     description: "Luxury resort transfers to Dubai's most exclusive destinations",
     tag: "Resort Tours",
     action: "Book Resort Tour"
   },
   {
-    image: "/placeholder.svg", // Original: "/dubai-atlantis-vip-transfers.webp",
+    image: "/carousel-images/dubai-atlantis-vip-transfers.webp", 
     title: "Atlantis Dubai Premium",
     description: "VIP transfers to Dubai's most luxurious hotels and attractions",
     tag: "VIP Tours",
     action: "Book VIP Tour"
   },
   {
-    image: "/placeholder.svg", // Original: "/dubai-marina-night.webp",
+    image: "/carousel-images/dubai-marina-night.webp", 
     title: "Dubai Marina Nights",
     description: "Explore the glittering Dubai Marina in ultimate comfort and style",
     tag: "Marina Tours",
     action: "Book Marina Tour"
   },
   {
-    image: "/placeholder.svg", // Original: "/dubai-mall-luxury.webp",
+    image: "/carousel-images/dubai-mall-luxury.webp", 
     title: "Dubai Mall Luxury Shopping",
     description: "Personal chauffeur service to the world's largest shopping destination",
     tag: "Shopping Tours",
     action: "Book Shopping Tour"
   },
   {
-    image: "/carousel-images/dubai-luxury-hotel-transfers.webp", // Original: "/dubai-luxury-hotel-transfers.webp",
+    image: "/carousel-images/dubai-luxury-hotel-transfers.webp", 
     title: "5-Star Hotel Transfers",
     description: "Arrive in style at Dubai's most prestigious luxury hotels",
     tag: "Hotel Transfers",
     action: "Book Transfer"
   },
   {
-    image: "/placeholder.svg", // Original: "/dubai-shopping-luxury.webp",
+    image: "/carousel-images/dubai-shopping-luxury.webp", 
     title: "Premium Shopping Experience",
     description: "Visit Dubai Mall and luxury destinations with personal chauffeur",
     tag: "Shopping Tours",
     action: "Book Shopping Tour"
   },
   {
-    image: "/carousel-images/dubai-gold-souk.webp", // Original: "/dubai-gold-souk.webp",
+    image: "/carousel-images/dubai-gold-souk.webp", 
     title: "Gold Souk Heritage",
     description: "Discover Dubai's traditional markets with modern luxury transport",
     tag: "Heritage Tours",
     action: "Book Heritage Tour"
   },
   {
-    image: "/placeholder.svg", // Original: "/dubai-desert-luxury.webp",
+    image: "/carousel-images/dubai-desert-luxury.webp", 
     title: "Desert Safari Adventure",
     description: "Luxury desert experiences with premium 4WD vehicles",
     tag: "Desert Tours",
