@@ -3,17 +3,17 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 
 // Import Dubai images - SEO optimized for hotel transfers
-import dubaiHero from "@/assets/dubai-luxury-hero.webp";
-import dubaiMarina from "@/assets/dubai-marina-night.webp";
-import dubaiShopping from "@/assets/dubai-shopping-luxury.webp";
-import dubaiDesert from "@/assets/dubai-desert-luxury.webp";
-import dubaiPalm from "@/assets/dubai-palm-luxury-resort-transfers.webp";
-import dubaiAtlantis from "@/assets/dubai-atlantis-vip-transfers.webp";
-import dubaiGoldSouk from "@/assets/dubai-gold-souk.webp";
-import dubaiBurjNight from "@/assets/dubai-burj-khalifa-night.webp";
-import dubaiFountain from "@/assets/dubai-fountain-show.webp";
-import dubaiMallLux from "@/assets/dubai-mall-luxury.webp";
-import dubaiLuxHotel from "@/assets/dubai-luxury-hotel-transfers.webp";
+import dubaiHero from "/dubai-luxury-hero.webp";
+import dubaiMarina from "/dubai-marina-night.webp";
+import dubaiShopping from "/dubai-shopping-luxury.webp";
+import dubaiDesert from "/dubai-desert-luxury.webp";
+import dubaiPalm from "/dubai-palm-luxury-resort-transfers.webp";
+import dubaiAtlantis from "/dubai-atlantis-vip-transfers.webp";
+import dubaiGoldSouk from "/dubai-gold-souk.webp";
+import dubaiBurjNight from "/dubai-burj-khalifa-night.webp";
+import dubaiFountain from "/dubai-fountain-show.webp";
+import dubaiMallLux from "/dubai-mall-luxury.webp";
+import dubaiLuxHotel from "/dubai-luxury-hotel-transfers.webp";
 
 const dubaiSlides = [
   {
