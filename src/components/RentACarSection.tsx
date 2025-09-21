@@ -4,17 +4,17 @@ import { Car } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Import car images - SEO optimized with descriptive names
-import mercedesSClass from "@/assets/cars/mercedes-s-class-luxury-chauffeur-dubai.webp";
-import bmw7Series from "@/assets/cars/bmw-7-series-executive-luxury-dubai.webp";
+import mercedesSClass from "/cars/mercedes-s-class-luxury-chauffeur-dubai.webp";
+import bmw7Series from "/cars/bmw-7-series-executive-luxury-dubai.webp";
 
-import audiA6 from "@/assets/cars/audi-a6-business-luxury-rental-dubai.webp";
-import lexusES350 from "@/assets/cars/lexus-es350.webp";
-import mercedesViano from "@/assets/cars/mercedes-viano.webp";
-import toyotaPrevia8Silver from "@/assets/cars/toyota-previa-8-seater-luxury-dubai.webp";
-import nissanPatrol from "@/assets/cars/nissan-patrol.webp";
-import gmcSuv from "@/assets/cars/gmc-suv.webp";
-import kiaCarnival from "@/assets/cars/kia-carnival.webp";
-import toyotaLandCruiser from "@/assets/cars/toyota-land-cruiser.webp";
+import audiA6 from "/cars/audi-a6-business-luxury-rental-dubai.webp";
+import lexusES350 from "/cars/lexus-es350.webp";
+import mercedesViano from "/cars/mercedes-viano.webp";
+import toyotaPrevia8Silver from "/cars/toyota-previa-8-seater-luxury-dubai.webp";
+import nissanPatrol from "/cars/nissan-patrol.webp";
+import gmcSuv from "/cars/gmc-suv.webp";
+import kiaCarnival from "/cars/kia-carnival.webp";
+import toyotaLandCruiser from "/cars/toyota-land-cruiser.webp";
 
 // Cars organized by price (low to high)
 const carsByPrice = [
