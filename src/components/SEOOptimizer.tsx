@@ -18,7 +18,7 @@ export const SEOOptimizer = ({
   description,
   keywords = [],
   canonicalUrl,
-  ogImage = `/cars/mercedes-s-class.jpg`,
+  ogImage = `https://royalcitytourism.com/dubai-luxury-hero.webp`,
   ogType = "website",
   structuredData = [],
   hreflangs = [],
