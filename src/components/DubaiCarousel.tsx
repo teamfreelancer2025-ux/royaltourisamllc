@@ -12,21 +12,21 @@ const dubaiSlides = [
     action: "Book City Tour"
   },
   {
-    image: "/placeholder.svg", // Original: "/dubai-burj-khalifa-night.webp",
+    image: "/carousel-images/dubai-burj-khalifa-night.webp", // Original: "/dubai-burj-khalifa-night.webp",
     title: "Burj Khalifa Night Magic",
     description: "Witness the world's tallest building illuminated in luxury comfort",
     tag: "Night Tours",
     action: "Book Night Tour"
   },
   {
-    image: "/placeholder.svg", // Original: "/dubai-fountain-show.webp",
+    image: "/carousel-images/dubai-fountain-show.webp", // Original: "/dubai-fountain-show.webp",
     title: "Dubai Fountain Spectacular",
     description: "Premium front-row access to the world's largest fountain show",
     tag: "VIP Experience",
     action: "Book VIP Experience"
   },
   {
-    image: "/placeholder.svg", // Original: "/dubai-palm-luxury-resort-transfers.webp",
+    image: "/carousel-images/dubai-palm-luxury-resort-transfers.jpg", // Original: "/dubai-palm-luxury-resort-transfers.webp",
     title: "Palm Jumeirah Paradise",
     description: "Luxury resort transfers to Dubai's most exclusive destinations",
     tag: "Resort Tours",
@@ -54,7 +54,7 @@ const dubaiSlides = [
     action: "Book Shopping Tour"
   },
   {
-    image: "/placeholder.svg", // Original: "/dubai-luxury-hotel-transfers.webp",
+    image: "/carousel-images/dubai-luxury-hotel-transfers.webp", // Original: "/dubai-luxury-hotel-transfers.webp",
     title: "5-Star Hotel Transfers",
     description: "Arrive in style at Dubai's most prestigious luxury hotels",
     tag: "Hotel Transfers",
@@ -68,7 +68,7 @@ const dubaiSlides = [
     action: "Book Shopping Tour"
   },
   {
-    image: "/placeholder.svg", // Original: "/dubai-gold-souk.webp",
+    image: "/carousel-images/dubai-gold-souk.webp", // Original: "/dubai-gold-souk.webp",
     title: "Gold Souk Heritage",
     description: "Discover Dubai's traditional markets with modern luxury transport",
     tag: "Heritage Tours",
