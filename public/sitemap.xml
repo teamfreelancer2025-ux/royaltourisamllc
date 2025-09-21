@@ -86,12 +86,4 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Blog Page -->
-  <url>
-    <loc>https://royalcitytourism.com/blog</loc>
-    <lastmod>2024-09-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
 </urlset>
