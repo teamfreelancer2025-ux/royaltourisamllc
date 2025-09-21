@@ -3,91 +3,79 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 
 // Import Dubai images - SEO optimized for hotel transfers
-import dubaiHero from "/dubai-luxury-hero.webp";
-import dubaiMarina from "/dubai-marina-night.webp";
-import dubaiShopping from "/dubai-shopping-luxury.webp";
-import dubaiDesert from "/dubai-desert-luxury.webp";
-import dubaiPalm from "/dubai-palm-luxury-resort-transfers.webp";
-import dubaiAtlantis from "/dubai-atlantis-vip-transfers.webp";
-import dubaiGoldSouk from "/dubai-gold-souk.webp";
-import dubaiBurjNight from "/dubai-burj-khalifa-night.webp";
-import dubaiFountain from "/dubai-fountain-show.webp";
-import dubaiMallLux from "/dubai-mall-luxury.webp";
-import dubaiLuxHotel from "/dubai-luxury-hotel-transfers.webp";
-
 const dubaiSlides = [
   {
-    image: dubaiHero,
+    image: "/dubai-luxury-hero.webp",
     title: "Burj Khalifa Luxury Experience",
     description: "Best City Tour Packages Across UAE: Explore Dubai, Abu Dhabi, and Sharjah with all-inclusive deals and hassle-free ticket booking.",
     tag: "City Tours",
     action: "Book City Tour"
   },
   {
-    image: dubaiBurjNight,
+    image: "/dubai-burj-khalifa-night.webp",
     title: "Burj Khalifa Night Magic",
     description: "Witness the world's tallest building illuminated in luxury comfort",
     tag: "Night Tours",
     action: "Book Night Tour"
   },
   {
-    image: dubaiFountain,
+    image: "/dubai-fountain-show.webp",
     title: "Dubai Fountain Spectacular",
     description: "Premium front-row access to the world's largest fountain show",
     tag: "VIP Experience",
     action: "Book VIP Experience"
   },
   {
-    image: dubaiPalm,
+    image: "/dubai-palm-luxury-resort-transfers.webp",
     title: "Palm Jumeirah Paradise",
     description: "Luxury resort transfers to Dubai's most exclusive destinations",
     tag: "Resort Tours",
     action: "Book Resort Tour"
   },
   {
-    image: dubaiAtlantis,
+    image: "/dubai-atlantis-vip-transfers.webp",
     title: "Atlantis Dubai Premium",
     description: "VIP transfers to Dubai's most luxurious hotels and attractions",
     tag: "VIP Tours",
     action: "Book VIP Tour"
   },
   {
-    image: dubaiMarina,
+    image: "/dubai-marina-night.webp",
     title: "Dubai Marina Nights",
     description: "Explore the glittering Dubai Marina in ultimate comfort and style",
     tag: "Marina Tours",
     action: "Book Marina Tour"
   },
   {
-    image: dubaiMallLux,
+    image: "/dubai-mall-luxury.webp",
     title: "Dubai Mall Luxury Shopping",
     description: "Personal chauffeur service to the world's largest shopping destination",
     tag: "Shopping Tours",
     action: "Book Shopping Tour"
   },
   {
-    image: dubaiLuxHotel,
+    image: "/dubai-luxury-hotel-transfers.webp",
     title: "5-Star Hotel Transfers",
     description: "Arrive in style at Dubai's most prestigious luxury hotels",
     tag: "Hotel Transfers",
     action: "Book Transfer"
   },
   {
-    image: dubaiShopping,
+    image: "/dubai-shopping-luxury.webp",
     title: "Premium Shopping Experience",
     description: "Visit Dubai Mall and luxury destinations with personal chauffeur",
     tag: "Shopping Tours",
     action: "Book Shopping Tour"
   },
   {
-    image: dubaiGoldSouk,
+    image: "/dubai-gold-souk.webp",
     title: "Gold Souk Heritage",
     description: "Discover Dubai's traditional markets with modern luxury transport",
     tag: "Heritage Tours",
     action: "Book Heritage Tour"
   },
   {
-    image: dubaiDesert,
+    image: "/dubai-desert-luxury.webp",
     title: "Desert Safari Adventure",
     description: "Luxury desert experiences with premium 4WD vehicles",
     tag: "Desert Tours",
