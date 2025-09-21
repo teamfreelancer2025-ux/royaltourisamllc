@@ -91,14 +91,14 @@ const DubaiCarousel = () => {
 
   // Auto-advance slides
   useEffect(() => {
-    if (!isAutoPlaying) return;
+    if (!isAutoPlaying || dubaiSlides.length <= 1) return;
     
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % dubaiSlides.length);
     }, 6000); // Increased to 6 seconds for more slides
 
     return () => clearInterval(timer);
-  }, [isAutoPlaying]);
+  }, [isAutoPlaying, dubaiSlides.length]);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % dubaiSlides.length);
