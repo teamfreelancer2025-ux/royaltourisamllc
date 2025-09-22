@@ -75,6 +75,12 @@ const Home = () => {
                   "@type": "Product",
                   "name": "Mercedes S-Class Rental with Driver",
                   "description": "Luxury Mercedes S-Class rental with professional chauffeur in Dubai"
+                },
+                "offers": {
+                  "@type": "Offer",
+                  "price": "350", // Placeholder price
+                  "priceCurrency": "AED",
+                  "availability": "InStock"
                 }
               },
               {
@@ -83,6 +89,12 @@ const Home = () => {
                   "@type": "Product",
                   "name": "BMW 7 Series Rental with Driver",
                   "description": "Premium BMW 7 Series rental with professional chauffeur in Dubai"
+                },
+                "offers": {
+                  "@type": "Offer",
+                  "price": "350", // Placeholder price
+                  "priceCurrency": "AED",
+                  "availability": "InStock"
                 }
               },
               {
@@ -91,12 +103,22 @@ const Home = () => {
                   "@type": "Product",
                   "name": "Toyota Hiace Van Rental",
                   "description": "Spacious Toyota Hiace van rental for group transportation in Dubai"
+                },
+                "offers": {
+                  "@type": "Offer",
+                  "price": "300", // Placeholder price
+                  "priceCurrency": "AED",
+                  "availability": "InStock"
                 }
               }
             ]
           },
           "aggregateRating": {
             "@type": "AggregateRating",
+            "itemReviewed": {
+              "@type": "Organization",
+              "name": "Royal City Tourism L.L.C"
+            },
             "ratingValue": "4.9",
             "reviewCount": "150",
             "bestRating": "5",
