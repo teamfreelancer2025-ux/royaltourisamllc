@@ -43,13 +43,13 @@ const RentACar = () => {
                   "brand": "Mercedes-Benz",
                   "model": "S-Class",
                   "seatingCapacity": "4",
-                  "fuelType": "Gasoline"
-                },
-                "offers": {
-                  "@type": "Offer",
-                  "price": "350", // Placeholder price
-                  "priceCurrency": "AED",
-                  "availability": "InStock"
+                  "fuelType": "Gasoline",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "350", // Placeholder price
+                    "priceCurrency": "AED",
+                    "availability": "InStock"
+                  }
                 }
               },
               {
@@ -60,13 +60,13 @@ const RentACar = () => {
                   "brand": "BMW",
                   "model": "7 Series", 
                   "seatingCapacity": "4",
-                  "fuelType": "Gasoline"
-                },
-                "offers": {
-                  "@type": "Offer",
-                  "price": "350", // Placeholder price
-                  "priceCurrency": "AED",
-                  "availability": "InStock"
+                  "fuelType": "Gasoline",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "350", // Placeholder price
+                    "priceCurrency": "AED",
+                    "availability": "InStock"
+                  }
                 }
               },
               {
@@ -77,13 +77,13 @@ const RentACar = () => {
                   "brand": "Toyota",
                   "model": "Hiace",
                   "seatingCapacity": "13",
-                  "fuelType": "Gasoline"
-                },
-                "offers": {
-                  "@type": "Offer",
-                  "price": "300", // Placeholder price
-                  "priceCurrency": "AED",
-                  "availability": "InStock"
+                  "fuelType": "Gasoline",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "300", // Placeholder price
+                    "priceCurrency": "AED",
+                    "availability": "InStock"
+                  }
                 }
               }
             ]
