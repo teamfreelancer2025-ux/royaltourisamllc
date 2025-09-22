@@ -1,63 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
+
   <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://royalcitytourism.com/</loc>
-    <lastmod>2024-09-19</lastmod>
+    <lastmod>2024-09-19T10:30:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://royalcitytourism.com/dubai-luxury-hero.webp</image:loc>
       <image:title>Dubai Luxury Car Rental with Driver - Royal City Tourism</image:title>
       <image:caption>Premium chauffeur-driven Mercedes, BMW, and Toyota vehicles available 24/7 in Dubai UAE</image:caption>
+      <image:geo_location>Dubai, UAE</image:geo_location>
       <image:license>https://royalcitytourism.com/</image:license>
     </image:image>
     <image:image>
       <image:loc>https://royalcitytourism.com/cars/mercedes-s-class-luxury-chauffeur-dubai.jpg</image:loc>
       <image:title>Mercedes S-Class Luxury Car Rental Dubai with Chauffeur</image:title>
       <image:caption>Luxury Mercedes S-Class rental Dubai with professional chauffeur service</image:caption>
+      <image:geo_location>Dubai, UAE</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://royalcitytourism.com/cars/bmw-7-series-executive-luxury-dubai.jpg</image:loc>
       <image:title>BMW 7 Series Executive Car Rental Dubai</image:title>
       <image:caption>Executive BMW 7 Series rental with driver service in Dubai</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Rent a Car Page - High Priority -->
-  <url>
-    <loc>https://royalcitytourism.com/rent-a-car</loc>
-    <lastmod>2024-09-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://royalcitytourism.com/cars/mercedes-s-class.jpg</image:loc>
-      <image:title>Mercedes S-Class Luxury Car Rental Dubai with Driver</image:title>
-      <image:caption>Premium Mercedes S-Class chauffeur service Dubai - 4-seater luxury sedan rental</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://royalcitytourism.com/cars/bmw-7-series.jpg</image:loc>
-      <image:title>BMW 7 Series Executive Car Rental Dubai</image:title>
-      <image:caption>Executive BMW 7 Series with professional chauffeur - luxury business transportation Dubai</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://royalcitytourism.com/cars/toyota-hiace-13.jpg</image:loc>
-      <image:title>Toyota Hiace 13-Seater Van Rental Dubai</image:title>
-      <image:caption>Spacious Toyota Hiace 13-seater van rental with driver for group transportation in Dubai</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://royalcitytourism.com/cars/mercedes-sprinter-15.jpg</image:loc>
-      <image:title>Mercedes Sprinter 15-Seater Van Rental Dubai</image:title>
-      <image:caption>Luxury Mercedes Sprinter 15-passenger van with chauffeur for large groups in Dubai</image:caption>
+      <image:geo_location>Dubai, UAE</image:geo_location>
     </image:image>
   </url>
 
   <!-- About Page -->
   <url>
     <loc>https://royalcitytourism.com/about</loc>
-    <lastmod>2024-09-19</lastmod>
+    <lastmod>2024-09-19T10:30:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -65,7 +40,7 @@
   <!-- Contact Page -->
   <url>
     <loc>https://royalcitytourism.com/contact</loc>
-    <lastmod>2024-09-19</lastmod>
+    <lastmod>2024-09-19T10:30:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -73,7 +48,7 @@
   <!-- FAQ Page -->
   <url>
     <loc>https://royalcitytourism.com/faq</loc>
-    <lastmod>2024-09-19</lastmod>
+    <lastmod>2024-09-19T10:30:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -81,9 +56,19 @@
   <!-- Reviews Page -->
   <url>
     <loc>https://royalcitytourism.com/reviews</loc>
-    <lastmod>2024-09-19</lastmod>
+    <lastmod>2024-09-19T10:30:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- (Optional) Future Blog or Services Pages -->
+  <!--
+  <url>
+    <loc>https://royalcitytourism.com/blog</loc>
+    <lastmod>2024-09-19T10:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  -->
 
 </urlset>
