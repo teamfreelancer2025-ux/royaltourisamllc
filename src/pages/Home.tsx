@@ -75,7 +75,7 @@ const Home = () => {
                   "@type": "Car", // Changed from Product to Car
                   "name": "Mercedes S-Class Rental with Driver",
                   "description": "Luxury Mercedes S-Class rental with professional chauffeur in Dubai",
-                  "offers": { // Correctly nested here
+                  "offers": {
                     "@type": "Offer",
                     "price": "350", // Placeholder price
                     "priceCurrency": "AED",
@@ -89,7 +89,7 @@ const Home = () => {
                   "@type": "Car", // Changed from Product to Car
                   "name": "BMW 7 Series Rental with Driver",
                   "description": "Premium BMW 7 Series rental with professional chauffeur in Dubai",
-                  "offers": { // Correctly nested here
+                  "offers": {
                     "@type": "Offer",
                     "price": "350", // Placeholder price
                     "priceCurrency": "AED",
@@ -103,7 +103,7 @@ const Home = () => {
                   "@type": "Car", // Changed from Product to Car
                   "name": "Toyota Hiace Van Rental",
                   "description": "Spacious Toyota Hiace van rental for group transportation in Dubai",
-                  "offers": { // Correctly nested here
+                  "offers": {
                     "@type": "Offer",
                     "price": "300", // Placeholder price
                     "priceCurrency": "AED",
