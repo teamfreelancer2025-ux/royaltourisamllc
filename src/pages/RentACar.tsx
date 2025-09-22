@@ -44,6 +44,12 @@ const RentACar = () => {
                   "model": "S-Class",
                   "seatingCapacity": "4",
                   "fuelType": "Gasoline"
+                },
+                "offers": {
+                  "@type": "Offer",
+                  "price": "350", // Placeholder price
+                  "priceCurrency": "AED",
+                  "availability": "InStock"
                 }
               },
               {
@@ -55,6 +61,12 @@ const RentACar = () => {
                   "model": "7 Series", 
                   "seatingCapacity": "4",
                   "fuelType": "Gasoline"
+                },
+                "offers": {
+                  "@type": "Offer",
+                  "price": "350", // Placeholder price
+                  "priceCurrency": "AED",
+                  "availability": "InStock"
                 }
               },
               {
@@ -66,6 +78,12 @@ const RentACar = () => {
                   "model": "Hiace",
                   "seatingCapacity": "13",
                   "fuelType": "Gasoline"
+                },
+                "offers": {
+                  "@type": "Offer",
+                  "price": "300", // Placeholder price
+                  "priceCurrency": "AED",
+                  "availability": "InStock"
                 }
               }
             ]
