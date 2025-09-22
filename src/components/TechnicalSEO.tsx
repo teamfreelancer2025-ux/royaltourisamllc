@@ -9,87 +9,21 @@ export const TechnicalSEO = () => {
     script.async = true;
     document.body.appendChild(script);
 
-    // Google Analytics script loader (replace GA_MEASUREMENT_ID with actual ID)
+    // Google Analytics script loader (optional - if not already in index.html)
     const gaScript = document.createElement('script');
+    gaScript.src = '/google-analytics.js'; // Assuming this is a local script
     gaScript.async = true;
-    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID';
     document.head.appendChild(gaScript);
 
-    const gaConfigScript = document.createElement('script');
-    gaConfigScript.src = '/google-analytics.js';
-    document.head.appendChild(gaConfigScript);
-
-    // Add critical resource hints
-    const addResourceHint = (rel: string, href: string, as?: string) => {
-      const link = document.createElement('link');
-      link.rel = rel;
-      link.href = href;
-      if (as) link.setAttribute('as', as);
-      document.head.appendChild(link);
-    };
-
-    // Preload critical images
-    addResourceHint('preload', '/dubai-luxury-hero.webp', 'image');
-    addResourceHint('preload', '/cars/mercedes-s-class.webp', 'image');
-    addResourceHint('preload', '/cars/bmw-7-series.webp', 'image');
-
-    // Add structured data for current page
-    const addStructuredData = (data: any, id: string) => {
-      const existingScript = document.getElementById(id);
-      if (existingScript) {
-        existingScript.remove();
-      }
-
+    const addStructuredData = (data: Record<string, unknown>, id: string) => {
       const script = document.createElement('script');
       script.type = 'application/ld+json';
       script.id = id;
-      script.textContent = JSON.stringify(data);
+      script.innerHTML = JSON.stringify(data);
       document.head.appendChild(script);
     };
 
-    // Voice search optimization - add conversational structured data
-    const voiceSearchData = {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Royal City Tourism L.L.C",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Dubai",
-        "addressCountry": "AE"
-      },
-      "telephone": "+971588373992",
-      "description": "Best luxury car rental service in Dubai with professional chauffeurs. Mercedes S-Class, BMW 7 Series, Toyota Hiace available 24/7 across UAE.",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Dubai Car Rental Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "name": "Mercedes S-Class Rental Dubai",
-            "description": "Luxury Mercedes S-Class with professional chauffeur",
-            "price": "350 AED per day",
-            "availability": "Available 24/7"
-          },
-          {
-            "@type": "Offer",
-            "name": "BMW 7 Series Rental Dubai", 
-            "description": "Executive BMW 7 Series with experienced driver",
-            "price": "350 AED per day",
-            "availability": "Available 24/7"
-          },
-          {
-            "@type": "Offer",
-            "name": "Toyota Hiace Group Rental Dubai",
-            "description": "Spacious Toyota Hiace 13-seater for group transportation",
-            "price": "300 AED per day", 
-            "availability": "Available 24/7"
-          }
-        ]
-      }
-    };
-
-    addStructuredData(voiceSearchData, 'voice-search-data');
-
+    // Clean up function
     return () => {
       // Cleanup on unmount
       const scripts = document.querySelectorAll('script[src*="performance-optimizer"], script[src*="google-analytics"]');

@@ -113,10 +113,14 @@ export const generateCarRentalSchema = (cars: any[]) => ({
         "@type": "Car",
         "name": car.name,
         "seatingCapacity": car.seats,
-        "category": car.category
-      },
-      "price": car.price,
-      "availability": "InStock"
+        "category": car.category,
+        "offers": {
+          "@type": "Offer",
+          "price": car.price,
+          "priceCurrency": SEO_CONFIG.currency,
+          "availability": "InStock"
+        }
+      }
     }))
   }
 });
