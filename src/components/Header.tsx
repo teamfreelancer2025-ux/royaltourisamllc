@@ -26,9 +26,11 @@ const Header = () => {
               src="/lovable-uploads/5c339dab-1858-4a78-a443-4d64375fdf88.webp" 
               alt="Royal City Tourism LLC Original Logo" 
               className="h-10 md:h-12 w-auto shadow-glow"
+              width="100" height="40"
+              loading="eager"
             />
             <div className="block">
-              <h1 className="font-display text-lg md:text-xl font-bold text-primary">Royal City Tourism</h1>
+              <h2 className="font-display text-lg md:text-xl font-bold text-primary">Royal City Tourism</h2>
               <p className="text-xs text-muted-foreground">L.L.C</p>
             </div>
           </Link>

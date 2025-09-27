@@ -26,7 +26,7 @@ const dubaiSlides = [
     action: "Book VIP Experience"
   },
   {
-    image: "/carousel-images/dubai-palm-luxury-resort-transfers.jpg", 
+    image: "/carousel-images/dubai-palm-luxury-resort-transfers.webp", 
     title: "Palm Jumeirah Paradise",
     description: "Luxury resort transfers to Dubai's most exclusive destinations",
     tag: "Resort Tours",

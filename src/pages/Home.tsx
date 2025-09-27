@@ -8,10 +8,10 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
       <Helmet>
-        <title>Dubai Car Rental with Driver | Royal City Tourism UAE</title>
+        <title>Luxury Car Rental Dubai | Royal City Tourism</title>
         <meta 
           name="description" 
-          content="Luxury car rental in Dubai with chauffeur. Mercedes S-Class, BMW 7 Series, Toyota Hiace. 24/7 service across UAE. Book now." 
+          content="Luxury car rental with driver in Dubai. Mercedes S-Class, BMW 7 Series, Toyota Hiace. 24/7 UAE transfers. Book online or call +971 58 837 3992." 
         />
         <meta name="keywords" content="Dubai car rental with driver, luxury car rental Dubai, chauffeur service Dubai, Mercedes S-Class rental Dubai, BMW rental Dubai, Toyota Hiace rental, car with driver Dubai, premium vehicle rental UAE, luxury transportation Dubai" />
         <link rel="canonical" href="https://royalcitytourism.com/" />

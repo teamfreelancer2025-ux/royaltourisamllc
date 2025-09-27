@@ -159,6 +159,7 @@ const Blog = () => {
                       alt={`${post.title} - Dubai car rental blog post`}
                       className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                       loading="lazy"
+                      width="400" height="192"
                     />
                     <div className="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm rounded-full px-3 py-1">
                       <span className="text-primary-foreground text-sm font-semibold">{post.category}</span>

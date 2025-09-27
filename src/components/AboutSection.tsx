@@ -97,6 +97,7 @@ const AboutSection = () => {
                     alt="Royal City Tourism Logo" 
                     className="w-16 lg:w-24 h-16 lg:h-24 object-contain"
                     loading="lazy"
+                    width="96" height="96"
                   />
                 </div>
                 

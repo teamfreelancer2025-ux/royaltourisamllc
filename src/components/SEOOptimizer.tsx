@@ -52,8 +52,7 @@ export const SEOOptimizer = ({
       <meta name="geo.position" content="25.276987;55.296249" />
       <meta name="ICBM" content="25.276987, 55.296249" />
       
-      {/* Canonical URL */}
-      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      {/* Canonical URL - Removed to avoid duplicates, now managed by individual pages */}
       
       {/* Hreflang Tags */}
       {hreflangs.map(({ lang, url }) => (
