@@ -156,13 +156,17 @@ const DubaiCarousel = () => {
                 : 'opacity-0 scale-105'
             }`}
           >
-            {/* Background Image */}
-            <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-              style={{ backgroundImage: `url(${slide.image})` }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent"></div>
-            </div>
+            {/* SEO-Optimized Image */}
+            <img
+              src={slide.image}
+              alt={slide.title}
+              width="1200"
+              height="630"
+              fetchPriority={index === 0 ? "high" : "auto"}
+              loading={index === 0 ? "eager" : "lazy"}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent"></div>
 
             {/* Content Overlay */}
             <div className="relative z-10 h-full flex items-end p-4 sm:p-6 lg:p-8">
@@ -239,13 +243,13 @@ const DubaiCarousel = () => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 touch-manipulation ${
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 touch-manipulation flex items-center justify-center ${
               index === currentSlide
                 ? 'bg-primary shadow-glow scale-110' 
                 : 'bg-muted hover:bg-primary/50'
             }`}
             aria-label={`Go to slide ${index + 1}`}
-          />
+          ><span className="sr-only">Go to slide ${index + 1}</span></button>
         ))}
       </div>
 
