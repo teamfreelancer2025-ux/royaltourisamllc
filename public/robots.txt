@@ -1,9 +1,6 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://royalcitytourism.com/sitemap.xml
-
 # Allow search engines to crawl important pages
 Allow: /
 Allow: /about
@@ -18,6 +15,8 @@ Disallow: /api/
 Disallow: /private/
 Disallow: /*.json$
 Disallow: /*?*
+Disallow: /node_modules/
+Disallow: /backup-before-image-seo-20250928013033.zip
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
@@ -40,3 +39,5 @@ Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
+
+Sitemap: https://royalcitytourism.com/sitemap.xml

@@ -6,80 +6,80 @@ import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 const dubaiSlides = [
   {
     image: "/dubai-luxury-hero.webp",
-    title: "Burj Khalifa Luxury Experience",
-    description: "Best City Tour Packages Across UAE: Explore Dubai, Abu Dhabi, and Sharjah with all-inclusive deals and hassle-free ticket booking.",
-    tag: "City Tours",
-    action: "Book City Tour"
+    title: "Luxury Car Rental Dubai",
+    description: "Experience the ultimate in luxury car rentals with chauffeur service in Dubai. We offer premium vehicles for all your needs.",
+    tag: "Luxury Cars",
+    action: "Book Now"
   },
   {
     image: "/carousel-images/dubai-burj-khalifa-night.webp", 
-    title: "Burj Khalifa Night Magic",
-    description: "Witness the world's tallest building illuminated in luxury comfort",
-    tag: "Night Tours",
-    action: "Book Night Tour"
+    title: "Burj Khalifa Tour",
+    description: "Visit the iconic Burj Khalifa with our exclusive tours. Enjoy breathtaking views of Dubai's skyline.",
+    tag: "City Tours",
+    action: "Explore Tours"
   },
   {
     image: "/carousel-images/dubai-fountain-show.webp", 
-    title: "Dubai Fountain Spectacular",
-    description: "Premium front-row access to the world's largest fountain show",
-    tag: "VIP Experience",
-    action: "Book VIP Experience"
+    title: "Dubai Fountain Show",
+    description: "Witness the spectacular Dubai Fountain Show, a mesmerizing water, music, and light spectacle.",
+    tag: "Attractions",
+    action: "View Details"
   },
   {
     image: "/carousel-images/dubai-palm-luxury-resort-transfers.webp", 
-    title: "Palm Jumeirah Paradise",
-    description: "Luxury resort transfers to Dubai's most exclusive destinations",
-    tag: "Resort Tours",
-    action: "Book Resort Tour"
+    title: "Palm Jumeirah Transfers",
+    description: "Seamless transfers to and from Palm Jumeirah's luxury resorts with our premium chauffeur service.",
+    tag: "Transfers",
+    action: "Book Transfer"
   },
   {
     image: "/carousel-images/dubai-atlantis-vip-transfers.webp", 
-    title: "Atlantis Dubai Premium",
-    description: "VIP transfers to Dubai's most luxurious hotels and attractions",
-    tag: "VIP Tours",
-    action: "Book VIP Tour"
+    title: "Atlantis The Palm VIP",
+    description: "Enjoy VIP access and luxury transfers to Atlantis, The Palm. Experience world-class hospitality.",
+    tag: "VIP Experience",
+    action: "Book VIP"
   },
   {
     image: "/carousel-images/dubai-marina-night.webp", 
-    title: "Dubai Marina Nights",
-    description: "Explore the glittering Dubai Marina in ultimate comfort and style",
-    tag: "Marina Tours",
-    action: "Book Marina Tour"
+    title: "Dubai Marina Night",
+    description: "Experience the vibrant nightlife of Dubai Marina with our exclusive tours and transfers.",
+    tag: "Nightlife",
+    action: "Explore Now"
   },
   {
     image: "/carousel-images/dubai-mall-luxury.webp", 
-    title: "Dubai Mall Luxury Shopping",
-    description: "Personal chauffeur service to the world's largest shopping destination",
-    tag: "Shopping Tours",
-    action: "Book Shopping Tour"
+    title: "Dubai Mall Shopping",
+    description: "Indulge in a luxury shopping experience at The Dubai Mall with personal chauffeur service.",
+    tag: "Shopping",
+    action: "Shop Now"
   },
   {
     image: "/carousel-images/dubai-luxury-hotel-transfers.webp", 
-    title: "5-Star Hotel Transfers",
-    description: "Arrive in style at Dubai's most prestigious luxury hotels",
+    title: "Luxury Hotel Transfers",
+    description: "Arrive in style at Dubai's most prestigious hotels with our premium transfer services.",
     tag: "Hotel Transfers",
     action: "Book Transfer"
   },
   {
     image: "/carousel-images/dubai-shopping-luxury.webp", 
-    title: "Premium Shopping Experience",
-    description: "Visit Dubai Mall and luxury destinations with personal chauffeur",
-    tag: "Shopping Tours",
-    action: "Book Shopping Tour"
+    title: "Luxury Shopping Dubai",
+    description: "Discover the best luxury shopping destinations in Dubai with our convenient chauffeur services.",
+    tag: "Shopping",
+    action: "Explore Shops"
   },
   {
     image: "/carousel-images/dubai-gold-souk.webp", 
-    title: "Gold Souk Heritage",
-    description: "Discover Dubai's traditional markets with modern luxury transport",
-    tag: "Heritage Tours",
-    action: "Book Heritage Tour"
+    title: "Dubai Gold Souk",
+    description: "Explore the traditional charm of Dubai's Gold Souk with our guided tours and transfers.",
+    tag: "Culture",
+    action: "Discover History"
   },
   {
     image: "/carousel-images/dubai-desert-luxury.webp", 
-    title: "Desert Safari Adventure",
-    description: "Luxury desert experiences with premium 4WD vehicles",
+    title: "Luxury Desert Safari",
+    description: "Experience an unforgettable luxury desert safari adventure with private transfers and exclusive activities.",
     tag: "Desert Tours",
-    action: "Book Desert Tour"
+    action: "Book Safari"
   }
 ];
 
@@ -177,7 +177,7 @@ const DubaiCarousel = () => {
                 </div>
                 
                 {/* Title */}
-                <h3 className="font-display text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-2 sm:mb-3 leading-tight">
+                <h3 className="font-display text-2xl sm:text-3xl font-bold text-foreground mb-2 sm:mb-3 leading-tight">
                   {slide.title}
                 </h3>
                 
@@ -190,7 +190,7 @@ const DubaiCarousel = () => {
                 <Button 
                   variant="matte" 
                   size="sm"
-                  className="backdrop-blur-sm hover:backdrop-blur-md text-xs sm:text-sm w-full sm:w-auto"
+                  className="backdrop-blur-sm hover:backdrop-blur-md text-sm w-full sm:w-auto"
                   onClick={() => window.open("https://wa.me/971588373992?text=" + encodeURIComponent(`Hi! I'm interested in ${slide.action} - ${slide.title}. Can you provide more details?`), "_blank")}
                 >
                   {slide.action}

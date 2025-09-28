@@ -51,9 +51,9 @@ const ReviewsSection = () => {
             <Star className="w-4 h-4 md:w-5 md:h-5 text-primary fill-primary" />
             <span className="text-xs md:text-sm font-medium text-primary">Customer Reviews</span>
           </div>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6 px-2">
+          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6 px-2">
             What Our Clients Say
-          </h2>
+          </h1>
           <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2">
             Read genuine feedback from our satisfied customers around the world.
           </p>

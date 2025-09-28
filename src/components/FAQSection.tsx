@@ -65,9 +65,9 @@ const FAQSection = () => {
             <HelpCircle className="w-4 h-4 md:w-5 md:h-5 text-primary" />
             <span className="text-xs md:text-sm font-medium text-primary">Frequently Asked Questions</span>
           </div>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
+          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
             Got Questions? We've Got Answers
-          </h2>
+          </h1>
           <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
             Find answers to the most common questions about our luxury car rental services in Dubai.
           </p>

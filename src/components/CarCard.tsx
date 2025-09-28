@@ -27,7 +27,7 @@ const CarCard = ({ name, image, seats, price, additionalPrice, extraHourRate, ca
       <div className="relative overflow-hidden">
         <img 
           src={image} 
-          alt={`${name} luxury car rental Dubai with professional chauffeur - ${seats} seater premium vehicle`}
+          alt={`${name} luxury car rental Dubai`}
           className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
           loading="lazy"
           width="400"

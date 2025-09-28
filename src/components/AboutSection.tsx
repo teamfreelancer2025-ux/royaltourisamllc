@@ -14,9 +14,9 @@ const AboutSection = () => {
             <Crown className="w-5 h-5 text-primary" />
             <span className="text-sm font-medium text-primary uppercase tracking-wide">About Royal City Tourism</span>
           </div>
-          <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 md:mb-8 leading-tight">
+          <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 md:mb-8 leading-tight">
             Why Choose Royal City Tourism?
-          </h2>
+          </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             We are one of Dubai's leading luxury car rental companies, providing chauffeur-driven premium vehicles 
             for tourists and businessmen visiting Dubai. Experience the difference of true luxury service.
@@ -93,8 +93,8 @@ const AboutSection = () => {
                 {/* Logo with square background */}
                 <div className="inline-flex items-center justify-center w-24 lg:w-32 h-24 lg:h-32 bg-white/20 backdrop-blur-sm rounded-xl lg:rounded-2xl border border-white/30 mb-4 lg:mb-6">
                   <img 
-                    src="/lovable-uploads/c6014215-e9f4-4713-bb60-c1db1db4bc6f.webp" 
-                    alt="Royal City Tourism Logo" 
+                    src="/logo-premium.webp" 
+                    alt="Royal City Tourism LLC Logo"
                     className="w-16 lg:w-24 h-16 lg:h-24 object-contain"
                     loading="lazy"
                     width="96" height="96"

@@ -1,62 +1,27 @@
-import { Helmet } from "react-helmet-async";
 import ReviewsSection from "@/components/ReviewsSection";
+import { SEOOptimizer } from '@/components/SEOOptimizer';
+import { DUBAI_KEYWORDS, SEO_CONFIG, generateBreadcrumbSchema } from '@/utils/seo';
 
 const Reviews = () => {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: SEO_CONFIG.siteUrl },
+    { name: "Reviews", url: `${SEO_CONFIG.siteUrl}/reviews` }
+  ]);
+
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
-      <Helmet>
-        <title>Customer Reviews | Royal City Tourism UAE - Dubai Car Rental</title>
-        <meta 
-          name="description" 
-          content="Read 150+ genuine customer reviews for Royal City Tourism's Dubai car rental with driver service. 4.9/5 rating. Experience our luxury chauffeur service." 
-        />
-        <meta name="keywords" content="Dubai car rental reviews, customer testimonials Dubai, luxury chauffeur service feedback, Royal City Tourism reviews" />
-        <link rel="canonical" href="https://royalcitytourism.com/reviews" />
-        
-        {/* Reviews Schema Markup */}
-        <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Royal City Tourism L.L.C",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "150",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
-          "review": [
-            {
-              "@type": "Review",
-              "author": {
-                "@type": "Person",
-                "name": "Ahmed Al Mansoori"
-              },
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "reviewBody": "Excellent luxury car rental service in Dubai. Professional chauffeur, clean Mercedes S-Class, punctual service."
-            },
-            {
-              "@type": "Review", 
-              "author": {
-                "@type": "Person",
-                "name": "Sarah Johnson"
-              },
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "reviewBody": "Best car rental experience in Dubai. BMW 7 Series was immaculate and driver was very professional."
-            }
-          ]
-        })}
-        </script>
-      </Helmet>
+      <SEOOptimizer
+        title="Customer Reviews | Royal City Tourism Dubai - Luxury Car Rental"
+        description="Read genuine customer reviews and testimonials for Royal City Tourism's luxury car rental and chauffeur services in Dubai and across the UAE."
+        keywords={[
+          ...DUBAI_KEYWORDS.primary,
+          "Royal City Tourism reviews",
+          "Dubai car rental testimonials",
+          "luxury car service feedback Dubai"
+        ]}
+        canonicalUrl={`${SEO_CONFIG.siteUrl}/reviews`}
+        structuredData={[breadcrumbSchema]}
+      />
 
       {/* Space Background Elements */}
       <div className="fixed inset-0 z-0">

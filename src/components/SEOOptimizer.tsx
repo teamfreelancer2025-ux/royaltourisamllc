@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { SEO_CONFIG, generateLocalBusinessSchema, generateCarRentalServiceSchema } from '@/utils/seo';
+import { SEO_CONFIG, generateLocalBusinessSchema, generateCarRentalServiceSchema, generateWebsiteSchema } from '@/utils/seo';
 
 interface SEOOptimizerProps {
   title: string;
@@ -29,6 +29,7 @@ export const SEOOptimizer = ({
   
   // Default structured data
   const defaultStructuredData = [
+    generateWebsiteSchema(),
     generateLocalBusinessSchema(),
     generateCarRentalServiceSchema(),
     ...structuredData
@@ -111,5 +112,4 @@ export const SEOOptimizer = ({
     </Helmet>
   );
 };
-
 export default SEOOptimizer;

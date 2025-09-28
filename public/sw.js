@@ -8,12 +8,13 @@ const DYNAMIC_CACHE = 'dynamic-v1.2';
 // Assets to cache immediately
 const STATIC_ASSETS = [
   '/',
-  '/src/assets/logo-premium.webp',
+  '/index.html',
+  '/logo-premium.webp',
+  '/favicon.png',
   '/src/assets/dubai-luxury-hero.webp',
   '/src/assets/cars/mercedes-s-class.webp',
   '/src/assets/cars/bmw-7-series.webp',
   '/src/assets/cars/toyota-hiace-13.webp',
-  '/favicon.webp',
   '/robots.txt',
   '/sitemap.xml'
 ];

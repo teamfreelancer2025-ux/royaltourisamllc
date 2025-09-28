@@ -1,53 +1,27 @@
-import { Helmet } from "react-helmet-async";
 import AboutSection from "@/components/AboutSection";
+import { SEOOptimizer } from '@/components/SEOOptimizer';
+import { DUBAI_KEYWORDS, SEO_CONFIG, generateBreadcrumbSchema } from '@/utils/seo';
 
 const About = () => {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: SEO_CONFIG.siteUrl },
+    { name: "About Us", url: `${SEO_CONFIG.siteUrl}/about` }
+  ]);
+
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
-      <Helmet>
-        <title>About Royal City Tourism UAE | Luxury Car Rental Dubai</title>
-        <meta 
-          name="description" 
-          content="Royal City Tourism - Dubai's premier luxury car rental since 2014. Professional chauffeurs, 24/7 service, licensed & insured operations across UAE." 
-        />
-        <meta name="keywords" content="about Royal City Tourism, Dubai luxury car rental company, professional chauffeur service UAE, licensed car rental Dubai" />
-        <link rel="canonical" href="https://royalcitytourism.com/about" />
-        
-        {/* About Page Open Graph */}
-        <meta property="og:title" content="About Royal City Tourism UAE | Luxury Car Rental Dubai" />
-        <meta property="og:description" content="Royal City Tourism - Dubai's premier luxury car rental since 2014. Professional chauffeurs, 24/7 service, licensed & insured operations across UAE." />
-        <meta property="og:url" content="https://royalcitytourism.com/about" />
-        
-        {/* Organization Schema */}
-        <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Royal City Tourism L.L.C",
-          "alternateName": "Royal City Tourism",
-          "description": "Royal City Tourism - Dubai's premier luxury car rental since 2014. Professional chauffeurs, 24/7 service, licensed & insured operations across UAE.",
-          "url": "https://royalcitytourism.com",
-          "logo": "https://royalcitytourism.com/src/assets/logo-premium.webp",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+971 58 837 3992",
-            "contactType": "customer service",
-            "areaServed": "AE",
-            "availableLanguage": ["English", "Arabic"]
-          },
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Dubai",
-            "addressRegion": "Dubai",
-            "addressCountry": "AE"
-          },
-          "foundingDate": "2014",
-          "numberOfEmployees": "50-100",
-          "industry": "Car Rental Services",
-          "slogan": "Experience Dubai in Ultimate Luxury"
-        })}
-        </script>
-      </Helmet>
+      <SEOOptimizer
+        title="About Royal City Tourism | Dubai's Premier Car Rental & Chauffeur Service"
+        description="Learn more about Royal City Tourism, your premier partner for luxury car rentals and chauffeur services in Dubai and across the UAE. Discover our mission, values, and commitment to excellence."
+        keywords={[
+          ...DUBAI_KEYWORDS.primary,
+          "about us Dubai",
+          "Royal City Tourism mission",
+          "luxury car rental company Dubai"
+        ]}
+        canonicalUrl={`${SEO_CONFIG.siteUrl}/about`}
+        structuredData={[breadcrumbSchema]}
+      />
 
       {/* Space Background Elements */}
       <div className="fixed inset-0 z-0">

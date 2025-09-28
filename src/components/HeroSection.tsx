@@ -30,35 +30,32 @@ const HeroSection = () => {
             {/* CTA Content - First on mobile */}
             <div className="w-full space-y-4 sm:space-y-6 order-1 lg:order-2 animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <div className="text-center lg:text-left">
-                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-bold text-foreground mb-3 sm:mb-4 leading-tight">
-                  Your Premier Car Rental with Driver in Dubai
-                </h2>
-                <p className="text-muted-foreground mb-4 sm:mb-6 md:mb-8 text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0">
-                  Premium chauffeur-driven Mercedes, BMW & Toyota fleet across Dubai and UAE. Professional service since 2014.
-                </p>
-                <p className="text-lg md:text-xl text-muted-foreground max-w-lg mx-auto lg:mx-0 mt-4">
-                  Best City Tour Packages Across UAE: Explore Dubai, Abu Dhabi, and Sharjah with all-inclusive deals and hassle-free ticket booking.
+                <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 leading-tight">
+                  Experience Dubai in Luxury with Royal City Tourism
+                </h1>
+                <p className="text-muted-foreground mb-8 text-lg max-w-lg mx-auto lg:mx-0">
+                  Your premier partner for luxury car rentals and chauffeur services in Dubai and across the UAE.
                 </p>
               </div>
 
-              <div className="flex flex-col gap-3 sm:gap-4 max-w-md mx-auto lg:mx-0">
+              <div className="flex flex-col gap-4 max-w-md mx-auto lg:mx-0">
                 <Button 
                   variant="glossy" 
                   size="xl" 
                   onClick={openWhatsApp}
-                  className="flex items-center gap-3 w-full justify-center min-h-[52px] text-sm sm:text-base font-semibold"
+                  className="flex items-center gap-3 w-full justify-center min-h-[52px]"
                 >
-                  <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                  <span className="truncate">GET INSTANT QUOTE ON WHATSAPP</span>
+                  <MessageCircle className="w-5 h-5" />
+                  GET INSTANT QUOTE ON WHATSAPP
                 </Button>
                 <Button 
                   variant="matte" 
                   size="xl" 
                   onClick={callNow}
-                  className="flex items-center gap-3 w-full justify-center backdrop-blur-sm min-h-[52px] text-sm sm:text-base font-semibold"
+                  className="flex items-center gap-3 w-full justify-center backdrop-blur-sm min-h-[52px]"
                 >
-                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                  <span className="truncate">CALL NOW: +971 58 837 3992</span>
+                  <Phone className="w-5 h-5" />
+                  CALL NOW: +971 58 837 3992
                 </Button>
               </div>
             </div>

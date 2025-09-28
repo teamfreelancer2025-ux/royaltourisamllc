@@ -9,12 +9,9 @@ import Footer from "@/components/Footer";
 import TechnicalSEO from "@/components/TechnicalSEO";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import RentACar from "./pages/RentACar";
 import FAQ from "./pages/FAQ";
 import Reviews from "./pages/Reviews";
 import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
-import Blog from "./pages/Blog";
 
 const queryClient = new QueryClient();
 
@@ -30,13 +27,10 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/rent-a-car" element={<RentACar />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/blog" element={<Blog />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </BrowserRouter>

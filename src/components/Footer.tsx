@@ -1,5 +1,6 @@
 import { Phone, MessageCircle, MapPin, Crown, Car, Users, Clock, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SEO_CONFIG } from "../config/seo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,7 +13,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/5c339dab-1858-4a78-a443-4d64375fdf88.webp" 
+                src="/logo-premium.webp" 
                 alt="Royal City Tourism LLC Original Logo" 
                 className="h-12 w-auto shadow-glow"
                 width="120" height="48"
@@ -35,6 +36,31 @@ const Footer = () => {
             </div>
           </div>
 
+
+          {/* Social Media Links */}
+          <div className="space-y-6">
+            <h4 className="font-semibold text-foreground text-lg mb-4">Connect With Us</h4>
+            <div className="flex flex-wrap gap-4">
+              <a href={SEO_CONFIG.socialMedia.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors cursor-pointer">
+                <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" className="w-5 h-5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
+              </a>
+              <a href={SEO_CONFIG.socialMedia.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors cursor-pointer">
+                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" className="w-5 h-5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+              </a>
+              <a href={SEO_CONFIG.socialMedia.twitter} target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors cursor-pointer">
+                <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" className="w-5 h-5"><path d="M22.04 2.13C21.36 2.41 20.6 2.58 19.8 2.65A4.47 4.47 0 0021.6 1.05a8.21 8.21 0 01-2.34 1.34A4.45 4.45 0 0015.42 0c-2.48 0-4.5 2.02-4.5 4.5 0 .35.04.7.1 1.04A12.6 12.6 0 013.75 1.51a4.5 4.5 0 001.4 6 4.47 4.47 0 01-2.02-.55v.06c0 2.18 1.55 4 3.6 4.42a4.48 4.48 0 01-2.03.08c.57 1.8 2.22 3.1 4.17 3.13C7.54 18.06 6 18.5 4.5 18.5c-.88 0-1.72-.05-2.54-.15.93 1.03 2.14 1.8 3.56 2.24A12.7 12.7 0 0022.5 7.5c0-.18 0-.36-.01-.54a8.94 8.94 0 002.16-2.22z"></path></svg>
+              </a>
+              <a href={SEO_CONFIG.socialMedia.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors cursor-pointer">
+                <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0" viewBox="0 0 24 24" className="w-5 h-5"><path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2" stroke="none"></circle></svg>
+              </a>
+              <a href={SEO_CONFIG.socialMedia.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors cursor-pointer">
+                <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" className="w-5 h-5"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 00-1.94 2C2 8 2 12 2 12s0 4 1.46 5.58a2.78 2.78 0 001.94 2C7.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 001.94-2C22 16 22 12 22 12s0-4-1.46-5.58zM10 15.34V8.66l5.96 3.34-5.96 3.34z"></path></svg>
+              </a>
+              <a href="https://medium.com/" target="_blank" rel="noopener noreferrer" aria-label="Medium" className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors cursor-pointer">
+                <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0" viewBox="0 0 24 24" className="w-5 h-5"><path stroke="none" d="M4 11v6H2V9h2V4H2V2h3.5a2.5 2.5 0 012.5 2.5v1H9.5a2.5 2.5 0 012.5 2.5v2h2.5a2.5 2.5 0 012.5 2.5v6H15v-6a2.5 2.5 0 00-2.5-2.5h-2V7.5a2.5 2.5 0 00-2.5-2.5H4v-1h3.5A3.5 3.5 0 0011 2h0.5a3.5 3.5 0 003.5 3.5v1H18v-1a3.5 3.5 0 00-3.5-3.5h-1a3.5 3.5 0 00-3.5 3.5V6H4z"></path></svg>
+              </a>
+            </div>
+          </div>
 
           {/* Services */}
           <div className="space-y-6">
@@ -103,8 +129,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-
-            {/* Quick Contact Buttons removed as requested */}
           </div>
         </div>
 

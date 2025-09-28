@@ -1,50 +1,27 @@
-import { Helmet } from "react-helmet-async";
 import ContactSection from "@/components/ContactSection";
+import { SEOOptimizer } from '@/components/SEOOptimizer';
+import { DUBAI_KEYWORDS, SEO_CONFIG, generateBreadcrumbSchema } from '@/utils/seo';
 
 const Contact = () => {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: SEO_CONFIG.siteUrl },
+    { name: "Contact Us", url: `${SEO_CONFIG.siteUrl}/contact` }
+  ]);
+
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
-      <Helmet>
-        <title>Contact Royal City Tourism UAE | Dubai Car Rental</title>
-        <meta 
-          name="description" 
-          content="Contact Royal City Tourism for Dubai car rental with driver. Call +971 58 837 3992 or WhatsApp for instant quotes. 24/7 luxury chauffeur service." 
-        />
-        <meta name="keywords" content="contact Dubai car rental, book car rental Dubai, Royal City Tourism contact, luxury chauffeur service" />
-        <link rel="canonical" href="https://royalcitytourism.com/contact" />
-        
-        {/* Contact Page Schema */}
-        <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "ContactPage",
-          "name": "Contact Royal City Tourism L.L.C",
-          "description": "Contact information for Dubai's premier car rental service",
-          "mainEntity": {
-            "@type": "Organization",
-            "name": "Royal City Tourism L.L.C",
-            "telephone": "+971 58 837 3992",
-            "email": "info@royalcitytourism.com",
-            "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "telephone": "+971 58 837 3992",
-                "contactType": "customer service",
-                "areaServed": "AE",
-                "availableLanguage": ["English", "Arabic"],
-                "hoursAvailable": "Mo-Su 00:00-23:59"
-              },
-              {
-                "@type": "ContactPoint",
-                "url": "https://wa.me/971588373992",
-                "contactType": "customer service",
-                "name": "WhatsApp Support"
-              }
-            ]
-          }
-        })}
-        </script>
-      </Helmet>
+      <SEOOptimizer
+        title="Contact Royal City Tourism | Luxury Car Rental & Chauffeur Dubai"
+        description="Get in touch with Royal City Tourism for luxury car rentals and chauffeur services in Dubai. Contact us for inquiries, bookings, and 24/7 support."
+        keywords={[
+          ...DUBAI_KEYWORDS.primary,
+          "contact Royal City Tourism",
+          "Dubai car rental contact number",
+          "chauffeur service booking Dubai"
+        ]}
+        canonicalUrl={`${SEO_CONFIG.siteUrl}/contact`}
+        structuredData={[breadcrumbSchema]}
+      />
 
       {/* Space Background Elements */}
       <div className="fixed inset-0 z-0">

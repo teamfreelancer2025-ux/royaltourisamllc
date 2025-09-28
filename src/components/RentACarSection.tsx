@@ -124,11 +124,11 @@ const RentACarSection = () => {
             <Car className="w-5 h-5 text-primary" />
             <span className="text-sm font-medium text-primary">Premium Fleet</span>
           </div>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Rent a Luxury Car in Dubai
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            Our Luxury Fleet
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Choose from our extensive collection of premium vehicles. All prices include professional chauffeur service for 10 hours in Dubai with extra hours available.
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+            Choose from our exquisite collection of chauffeur-driven luxury cars for an unparalleled experience in Dubai.
           </p>
         </div>
 
