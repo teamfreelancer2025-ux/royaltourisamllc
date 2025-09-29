@@ -8,7 +8,7 @@
     }
   ],
   "routes": [
-    // Serve static client assets directly from dist/client
+    // Serve static client assets directly from dist/client (forced rewrite with comment)
     {
       "src": "/assets/(.*)",
       "dest": "/dist/client/assets/$1"
