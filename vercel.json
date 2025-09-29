@@ -2,20 +2,26 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.html",
-      "use": "@vercel/static"
-    },
-    {
       "src": "dist-server/server.js",
       "use": "@vercel/node",
       "config": { "includeFiles": ["dist/**", "dist-server/**"] }
     }
   ],
   "routes": [
+    // Serve static client assets directly from dist/client
     {
-      "src": "/_assets/(.*)",
+      "src": "/assets/(.*)",
       "dest": "/dist/client/assets/$1"
     },
+    {
+      "src": "/favicon.png",
+      "dest": "/dist/client/favicon.png"
+    },
+    {
+      "src": "/logo-premium.webp",
+      "dest": "/dist/client/logo-premium.webp"
+    },
+    // Route all other requests to the SSR serverless function
     {
       "src": "/(.*)",
       "dest": "dist-server/server.js"
