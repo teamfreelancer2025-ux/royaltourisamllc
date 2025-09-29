@@ -64,8 +64,8 @@ export async function createServer(
         render = (await vite.ssrLoadModule('/src/entry-server.tsx')).render;
       } else {
         template = indexProd;
-        // Corrected import path for production build
-        render = (await import(path.join(__dirname, 'dist/server/entry-server.js'))).render;
+        // The path is relative to the compiled server.js in dist-server/
+        render = (await import(path.join(__dirname, '../dist/entry-server.js'))).render;
       }
 
       const { appHtml, head } = await render(url);
