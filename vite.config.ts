@@ -10,12 +10,19 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Vercel deployment configuration - SPA mode
   build: {
-    ssr: 'src/entry-server.tsx',
+    outDir: 'dist',
+    emptyOutDir: true,
     rollupOptions: {
-      // Overwrite the default input
-      input: 'src/entry-server.tsx',
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+      },
     },
   },
+  // Optimize for production deployment
+  server: {
+    port: 3000
+  }
 });
 
