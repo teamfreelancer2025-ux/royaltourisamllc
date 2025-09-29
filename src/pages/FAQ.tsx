@@ -37,7 +37,8 @@ const FAQ = () => {
         title="Frequently Asked Questions | Royal City Tourism"
         description="Find answers to common questions about our luxury car rental and chauffeur services in Dubai."
         canonicalUrl={`${SEO_CONFIG.baseUrl}/faq`}
-        ogImage={`${SEO_CONFIG.baseUrl}/assets/images/og-image-faq.jpg`}
+        ogImage={`${SEO_CONFIG.baseUrl}/dubai-luxury-hero.webp`}
+        structuredData={[faqSchema, breadcrumbSchema]}
       />
 
       {/* Space Background Elements */}

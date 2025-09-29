@@ -112,10 +112,8 @@ export const SEOHead = ({
           </script>
         ))}
         
-        {/* Preconnect to External Resources */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://api.whatsapp.com" />
+        {/* Preload Hero Image for better performance */}
+        <link rel="preload" as="image" href="/dubai-luxury-hero.webp" />
         
         {/* DNS Prefetch */}
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />

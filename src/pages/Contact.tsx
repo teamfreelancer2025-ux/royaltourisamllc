@@ -15,7 +15,8 @@ const Contact = () => {
         title="Contact Us | Royal City Tourism"
         description="Get in touch with Royal City Tourism for inquiries and bookings. We are available 24/7."
         canonicalUrl={`${SEO_CONFIG.baseUrl}/contact`}
-        ogImage={`${SEO_CONFIG.baseUrl}/assets/images/og-image-contact.jpg`}
+        ogImage={`${SEO_CONFIG.baseUrl}/dubai-luxury-hero.webp`}
+        structuredData={[breadcrumbSchema]}
       />
 
       {/* Space Background Elements */}

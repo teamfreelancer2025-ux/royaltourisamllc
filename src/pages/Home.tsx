@@ -18,7 +18,7 @@ const Home = () => {
         title="Luxury Car Rental & Chauffeur Service in Dubai"
         description="Experience Dubai in luxury with Royal City Tourism. Your premier partner for high-end car rentals and professional chauffeur services across the UAE."
         canonicalUrl={SEO_CONFIG.baseUrl}
-        ogImage={`${SEO_CONFIG.baseUrl}/assets/images/og-image-home.jpg`}
+        ogImage={`${SEO_CONFIG.baseUrl}/dubai-luxury-hero.webp`}
       />
 
       {/* Space Background Elements */}

@@ -15,7 +15,8 @@ const Reviews = () => {
         title="Customer Reviews | Royal City Tourism"
         description="Read reviews from our satisfied customers and see why we are the top choice for luxury transport in Dubai."
         canonicalUrl={`${SEO_CONFIG.baseUrl}/reviews`}
-        ogImage={`${SEO_CONFIG.baseUrl}/assets/images/og-image-reviews.jpg`}
+        ogImage={`${SEO_CONFIG.baseUrl}/dubai-luxury-hero.webp`}
+        structuredData={[breadcrumbSchema]}
       />
 
       {/* Space Background Elements */}
