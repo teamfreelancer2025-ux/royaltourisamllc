@@ -1,21 +1,14 @@
 {
-  "version": 2,
+  "builds": [
+    {
+      "src": "dist/**",
+      "use": "@vercel/static"
+    }
+  ],
   "routes": [
     {
-      "src": "/assets/(.*)",
-      "dest": "/dist/client/assets/$1"
-    },
-    {
-      "src": "/favicon.png",
-      "dest": "/dist/client/favicon.png"
-    },
-    {
-      "src": "/logo-premium.webp",
-      "dest": "/dist/client/logo-premium.webp"
-    },
-    {
       "src": "/(.*)",
-      "dest": "dist-server/server.js"
+      "dest": "/index.html"
     }
   ]
 }
