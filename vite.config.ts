@@ -10,5 +10,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-})
+  build: {
+    ssr: "src/entry-server.tsx", // Server-side entry point
+  },
+});
 
