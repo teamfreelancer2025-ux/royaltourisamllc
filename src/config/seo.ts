@@ -79,8 +79,8 @@ export const SEO_CONFIG = {
   currency: "AED",
   timezone: "Asia/Dubai",
   socialMedia: {
-    facebook: "https://facebook.com/royalcitytourism",
-    instagram: "https://instagram.com/royalcitytourism", 
+    facebook: "https://www.facebook.com/royalcitytourism/",
+    instagram: "https://www.instagram.com/royalcitytourism/", 
     twitter: "https://twitter.com/royalcitytourism",
     linkedin: "https://linkedin.com/company/royalcitytourism",
     youtube: "https://www.youtube.com/channel/UCFzsd7A7eBMlT8vW0XFBc9Q",
