@@ -85,10 +85,9 @@ export async function createServer(
   return { app, vite };
 }
 
-if (!isTest) {
-  createServer(undefined, true).then(({ app }) => // Pass true for isProd in production environment
-    app.listen(6173, () => {
-      console.log('http://localhost:6173');
-    }),
-  );
-}
+// Export the app for Vercel serverless functions
+// This is the key change: export the app so Vercel can use it
+export default async (req: any, res: any) => {
+  const { app } = await createServer(undefined, true);
+  return app(req, res);
+};
