@@ -87,6 +87,7 @@ export async function createServer(
 
 // Export the app for Vercel serverless functions
 // This is the key change: export the app so Vercel can use it
+// Cache-busting comment to force new deployment
 export default async (req: any, res: any) => {
   const { app } = await createServer(undefined, true);
   return app(req, res);
