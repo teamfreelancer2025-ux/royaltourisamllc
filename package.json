@@ -7,7 +7,7 @@
     "dev": "vite",
     "build:client": "vite build",
     "build:server": "tsc --project tsconfig.node.json",
-    "build": "npm run build:client && npm run build:server && vite build --ssr",
+    "build": "npm run build:client && npm run build:server",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
