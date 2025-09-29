@@ -1,32 +1,19 @@
 import { lazy, Suspense } from 'react';
 import HeroSection from "@/components/HeroSection";
-import { SEOOptimizer } from '@/components/SEOOptimizer';
-import { DUBAI_KEYWORDS, SEO_CONFIG, generateBreadcrumbSchema } from '@/utils/seo';
+import { SEO_CONFIG } from '../config/seo';
+import { generateBreadcrumbSchema } from '../utils/seo';
 
 const RentACarSection = lazy(() => import("@/components/RentACarSection"));
 const FifteenSeaterSection = lazy(() => import("@/components/FifteenSeaterSection"));
 
 const Home = () => {
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: SEO_CONFIG.siteUrl }
+    { name: "Home", url: SEO_CONFIG.baseUrl }
   ]);
   
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
-      <SEOOptimizer
-        title="Luxury Car Rental Dubai with Driver | Royal City Tourism"
-        description="Experience the best luxury car rental and chauffeur services in Dubai with Royal City Tourism. Premium sedans, SUVs, and vans available 24/7."
-        keywords={[
-          ...DUBAI_KEYWORDS.primary,
-          ...DUBAI_KEYWORDS.secondary,
-          "car rental Dubai",
-          "chauffeur Dubai",
-          "luxury cars Dubai",
-          "Royal City Tourism"
-        ]}
-        canonicalUrl={SEO_CONFIG.siteUrl}
-        structuredData={[breadcrumbSchema]}
-      />
+      {/* The SEOHead component in main.tsx will handle global SEO */}
 
       {/* Space Background Elements */}
       <div className="fixed inset-0 z-0">

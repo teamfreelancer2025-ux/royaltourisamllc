@@ -55,7 +55,18 @@ export const DUBAI_KEYWORDS = {
 
 export const SEO_CONFIG = {
   siteName: "Royal City Tourism LLC",
-  siteUrl: "https://royalcitytourism.com",
+  baseUrl: "https://royalcitytourism.com",
+  defaultMeta: {
+    title: "Royal City Tourism - Luxury Car Rental & Chauffeur Service in Dubai",
+    description: "Experience Dubai in luxury with Royal City Tourism. Your premier partner for high-end car rentals and professional chauffeur services across the UAE.",
+    keywords: [
+      "luxury car rental Dubai",
+      "chauffeur service Dubai",
+      "Dubai tourism",
+      "premium car hire UAE",
+      ...DUBAI_KEYWORDS.primary
+    ]
+  },
   phone: "+971588373992",
   whatsapp: "+971588373992",
   email: "info@royalcitytourism.com",

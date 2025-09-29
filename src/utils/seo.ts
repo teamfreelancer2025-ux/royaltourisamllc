@@ -16,12 +16,12 @@ export const generateWebsiteSchema = () => ({
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": SEO_CONFIG.siteName,
-  "url": SEO_CONFIG.siteUrl,
+  "url": SEO_CONFIG.baseUrl,
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": `${SEO_CONFIG.siteUrl}/search?q={search_term_string}`
+      "urlTemplate": `${SEO_CONFIG.baseUrl}/search?q={search_term_string}`
     },
     "query-input": "required name=search_term_string"
   }
@@ -58,41 +58,15 @@ export const generateCarRentalSchema = (cars: any[]) => ({
   }
 });
 
-// Dubai areas for local SEO
-export const DUBAI_AREAS = [
-  "Dubai Marina",
-  "Downtown Dubai", 
-  "Business Bay",
-  "JBR",
-  "Palm Jumeirah",
-  "Dubai Mall",
-  "Burj Khalifa",
-  "Dubai International Airport",
-  "Al Maktoum Airport",
-  "Jumeirah",
-  "Deira",
-  "Bur Dubai"
-];
-
-export const UAE_EMIRATES = [
-  "Dubai",
-  "Abu Dhabi", 
-  "Sharjah",
-  "Ajman",
-  "Fujairah",
-  "Ras Al Khaimah",
-  "Umm Al Quwain"
-];
-
 // Enhanced Schema.org structured data generators
 export const generateLocalBusinessSchema = () => ({
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": `${SEO_CONFIG.siteUrl}#organization`,
+  "@id": `${SEO_CONFIG.baseUrl}#organization`,
   "name": SEO_CONFIG.siteName,
   "alternateName": "Royal City Tourism Dubai",
   "description": "Premier luxury car rental service in Dubai with professional chauffeur-driven vehicles. Mercedes, BMW, Toyota fleet available 24/7 across UAE.",
-  "url": SEO_CONFIG.siteUrl,
+  "url": SEO_CONFIG.baseUrl,
   "telephone": SEO_CONFIG.phone,
   "email": SEO_CONFIG.email,
   "foundingDate": SEO_CONFIG.foundingYear,
@@ -110,11 +84,43 @@ export const generateLocalBusinessSchema = () => ({
     "latitude": "25.276987",
     "longitude": "55.296249"
   },
-  "areaServed": UAE_EMIRATES.map(emirate => ({
-    "@type": "City",
-    "name": emirate,
-    "addressCountry": "AE"
-  })),
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Dubai",
+      "addressCountry": "AE"
+    },
+    {
+      "@type": "City",
+      "name": "Abu Dhabi",
+      "addressCountry": "AE"
+    },
+    {
+      "@type": "City",
+      "name": "Sharjah",
+      "addressCountry": "AE"
+    },
+    {
+      "@type": "City",
+      "name": "Ajman",
+      "addressCountry": "AE"
+    },
+    {
+      "@type": "City",
+      "name": "Fujairah",
+      "addressCountry": "AE"
+    },
+    {
+      "@type": "City",
+      "name": "Ras Al Khaimah",
+      "addressCountry": "AE"
+    },
+    {
+      "@type": "City",
+      "name": "Umm Al Quwain",
+      "addressCountry": "AE"
+    }
+  ],
   "serviceArea": {
     "@type": "GeoCircle",
     "geoMidpoint": {
@@ -147,14 +153,22 @@ export const generateCarRentalServiceSchema = () => ({
   "description": "Professional luxury car rental service in Dubai featuring Mercedes S-Class, BMW 7 Series, Toyota Hiace with experienced chauffeurs.",
   "provider": {
     "@type": "Organization",
-    "@id": `${SEO_CONFIG.siteUrl}#organization`
+    "@id": `${SEO_CONFIG.baseUrl}#organization`
   },
   "serviceType": "Car Rental Service",
   "category": "Transportation",
-  "areaServed": UAE_EMIRATES,
+  "areaServed": [
+    "Dubai",
+    "Abu Dhabi", 
+    "Sharjah",
+    "Ajman",
+    "Fujairah",
+    "Ras Al Khaimah",
+    "Umm Al Quwain"
+  ],
   "availableChannel": {
     "@type": "ServiceChannel",
-    "serviceUrl": SEO_CONFIG.siteUrl,
+    "serviceUrl": SEO_CONFIG.baseUrl,
     "servicePhone": SEO_CONFIG.phone
   },
   "offers": {

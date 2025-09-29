@@ -1,6 +1,6 @@
 import FAQSection from "@/components/FAQSection";
-import { SEOOptimizer } from '@/components/SEOOptimizer';
-import { DUBAI_KEYWORDS, SEO_CONFIG, generateBreadcrumbSchema, generateFAQSchema } from '@/utils/seo';
+import { SEO_CONFIG } from '../config/seo';
+import { generateBreadcrumbSchema, generateFAQSchema } from '../utils/seo';
 
 // Dummy FAQ data for schema generation - replace with actual FAQ content from FAQSection if available
 const faqs = [
@@ -24,26 +24,15 @@ const faqs = [
 
 const FAQ = () => {
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: SEO_CONFIG.siteUrl },
-    { name: "FAQ", url: `${SEO_CONFIG.siteUrl}/faq` }
+    { name: "Home", url: SEO_CONFIG.baseUrl },
+    { name: "FAQ", url: `${SEO_CONFIG.baseUrl}/faq` }
   ]);
 
   const faqSchema = generateFAQSchema(faqs);
 
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
-      <SEOOptimizer
-        title="FAQ - Frequently Asked Questions | Royal City Tourism Dubai"
-        description="Find answers to frequently asked questions about luxury car rentals and chauffeur services in Dubai and across the UAE with Royal City Tourism."
-        keywords={[
-          ...DUBAI_KEYWORDS.primary,
-          "Dubai car rental FAQ",
-          "chauffeur service questions Dubai",
-          "Royal City Tourism FAQs"
-        ]}
-        canonicalUrl={`${SEO_CONFIG.siteUrl}/faq`}
-        structuredData={[breadcrumbSchema, faqSchema]}
-      />
+      {/* The SEOHead component in main.tsx will handle global SEO */}
 
       {/* Space Background Elements */}
       <div className="fixed inset-0 z-0">

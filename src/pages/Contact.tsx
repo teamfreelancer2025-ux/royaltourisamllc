@@ -1,27 +1,16 @@
 import ContactSection from "@/components/ContactSection";
-import { SEOOptimizer } from '@/components/SEOOptimizer';
-import { DUBAI_KEYWORDS, SEO_CONFIG, generateBreadcrumbSchema } from '@/utils/seo';
+import { SEO_CONFIG } from '../config/seo';
+import { generateBreadcrumbSchema } from '../utils/seo';
 
 const Contact = () => {
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: SEO_CONFIG.siteUrl },
-    { name: "Contact Us", url: `${SEO_CONFIG.siteUrl}/contact` }
+    { name: "Home", url: SEO_CONFIG.baseUrl },
+    { name: "Contact Us", url: `${SEO_CONFIG.baseUrl}/contact` }
   ]);
 
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
-      <SEOOptimizer
-        title="Contact Royal City Tourism | Luxury Car Rental & Chauffeur Dubai"
-        description="Get in touch with Royal City Tourism for luxury car rentals and chauffeur services in Dubai. Contact us for inquiries, bookings, and 24/7 support."
-        keywords={[
-          ...DUBAI_KEYWORDS.primary,
-          "contact Royal City Tourism",
-          "Dubai car rental contact number",
-          "chauffeur service booking Dubai"
-        ]}
-        canonicalUrl={`${SEO_CONFIG.siteUrl}/contact`}
-        structuredData={[breadcrumbSchema]}
-      />
+      {/* The SEOHead component in main.tsx will handle global SEO */}
 
       {/* Space Background Elements */}
       <div className="fixed inset-0 z-0">

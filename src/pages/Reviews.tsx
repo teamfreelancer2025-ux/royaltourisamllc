@@ -1,27 +1,16 @@
 import ReviewsSection from "@/components/ReviewsSection";
-import { SEOOptimizer } from '@/components/SEOOptimizer';
-import { DUBAI_KEYWORDS, SEO_CONFIG, generateBreadcrumbSchema } from '@/utils/seo';
+import { SEO_CONFIG } from '../config/seo';
+import { generateBreadcrumbSchema } from '../utils/seo';
 
 const Reviews = () => {
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: SEO_CONFIG.siteUrl },
-    { name: "Reviews", url: `${SEO_CONFIG.siteUrl}/reviews` }
+    { name: "Home", url: SEO_CONFIG.baseUrl },
+    { name: "Reviews", url: `${SEO_CONFIG.baseUrl}/reviews` }
   ]);
 
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
-      <SEOOptimizer
-        title="Customer Reviews | Royal City Tourism Dubai - Luxury Car Rental"
-        description="Read genuine customer reviews and testimonials for Royal City Tourism's luxury car rental and chauffeur services in Dubai and across the UAE."
-        keywords={[
-          ...DUBAI_KEYWORDS.primary,
-          "Royal City Tourism reviews",
-          "Dubai car rental testimonials",
-          "luxury car service feedback Dubai"
-        ]}
-        canonicalUrl={`${SEO_CONFIG.siteUrl}/reviews`}
-        structuredData={[breadcrumbSchema]}
-      />
+      {/* The SEOHead component in main.tsx will handle global SEO */}
 
       {/* Space Background Elements */}
       <div className="fixed inset-0 z-0">
