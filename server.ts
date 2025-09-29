@@ -18,7 +18,7 @@ export async function createServer(
   const resolve = (p: string) => path.resolve(__dirname, p);
 
   const indexProd = isProd
-    ? await fs.readFile(resolve('dist/client/index.html'), 'utf-8')
+    ? await fs.readFile(resolve('../dist/client/index.html'), 'utf-8')
     : '';
 
   const app = express();
@@ -46,7 +46,7 @@ export async function createServer(
   } else {
     app.use((await import('compression')).default());
     app.use(
-      (await import('serve-static')).default(resolve('dist/client'), {
+      (await import('serve-static')).default(resolve('../dist/client'), {
         index: false,
       }),
     );
@@ -59,26 +59,25 @@ export async function createServer(
       let template, render;
       if (!isProd) {
         // always read fresh html in dev
-        template = await fs.readFile(resolve('index.html'), 'utf-8');
+        template = await fs.readFile(resolve('../index.html'), 'utf-8');
         template = await vite.transformIndexHtml(url, template);
-        render = (await vite.ssrLoadModule('/src/entry-server.tsx')).render;
+        render = (await vite.ssrLoadModule('src/entry-server.tsx')).render;
       } else {
         template = indexProd;
-        // The path is relative to the compiled server.js in dist-server/
-        render = (await import(path.join(__dirname, '../dist/entry-server.js'))).render;
+        // Import from the built server location
+        render = (await import(path.join(__dirname, 'entry-server.js'))).render;
       }
 
       const { appHtml, head } = await render(url);
 
-      const html = template
-        .replace('<!--app-head-->', head)
-        .replace('<!--app-html-->', appHtml);
+      const html = template.replace(`<!--ssr-outlet-->`, appHtml);
 
       res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
     } catch (e: any) {
-      vite?.ssrFixStacktrace(e);
-      console.log(e.stack);
-      res.status(500).end(e.stack);
+      const error = e as Error;
+      !isProd && vite?.ssrFixStacktrace(error);
+      console.error(error.stack);
+      res.status(500).end(error.stack);
     }
   });
 
@@ -86,8 +85,6 @@ export async function createServer(
 }
 
 // Export the app for Vercel serverless functions
-// This is the key change: export the app so Vercel can use it
-// Cache-busting comment to force new deployment
 export default async (req: any, res: any) => {
   const { app } = await createServer(undefined, true);
   return app(req, res);

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build:client": "vite build",
+    "build:client": "vite build --outDir dist/client",
     "build:server": "tsc --project tsconfig.node.json",
     "build": "npm run build:client && npm run build:server",
     "build:dev": "vite build --mode development",
