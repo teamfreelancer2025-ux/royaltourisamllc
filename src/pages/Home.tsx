@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import HeroSection from "@/components/HeroSection";
+import { SEOHead } from '@/components/SEOHead';
 import { SEO_CONFIG } from '../config/seo';
 import { generateBreadcrumbSchema } from '../utils/seo';
 
@@ -13,7 +14,12 @@ const Home = () => {
   
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
-      {/* The SEOHead component in main.tsx will handle global SEO */}
+      <SEOHead
+        title="Luxury Car Rental & Chauffeur Service in Dubai"
+        description="Experience Dubai in luxury with Royal City Tourism. Your premier partner for high-end car rentals and professional chauffeur services across the UAE."
+        canonicalUrl={SEO_CONFIG.baseUrl}
+        ogImage={`${SEO_CONFIG.baseUrl}/assets/images/og-image-home.jpg`}
+      />
 
       {/* Space Background Elements */}
       <div className="fixed inset-0 z-0">

@@ -1,4 +1,5 @@
 import ReviewsSection from "@/components/ReviewsSection";
+import { SEOHead } from '@/components/SEOHead';
 import { SEO_CONFIG } from '../config/seo';
 import { generateBreadcrumbSchema } from '../utils/seo';
 
@@ -10,7 +11,12 @@ const Reviews = () => {
 
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
-      {/* The SEOHead component in main.tsx will handle global SEO */}
+      <SEOHead
+        title="Customer Reviews | Royal City Tourism"
+        description="Read reviews from our satisfied customers and see why we are the top choice for luxury transport in Dubai."
+        canonicalUrl={`${SEO_CONFIG.baseUrl}/reviews`}
+        ogImage={`${SEO_CONFIG.baseUrl}/assets/images/og-image-reviews.jpg`}
+      />
 
       {/* Space Background Elements */}
       <div className="fixed inset-0 z-0">

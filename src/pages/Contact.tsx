@@ -1,4 +1,5 @@
 import ContactSection from "@/components/ContactSection";
+import { SEOHead } from '@/components/SEOHead';
 import { SEO_CONFIG } from '../config/seo';
 import { generateBreadcrumbSchema } from '../utils/seo';
 
@@ -10,7 +11,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
-      {/* The SEOHead component in main.tsx will handle global SEO */}
+      <SEOHead
+        title="Contact Us | Royal City Tourism"
+        description="Get in touch with Royal City Tourism for inquiries and bookings. We are available 24/7."
+        canonicalUrl={`${SEO_CONFIG.baseUrl}/contact`}
+        ogImage={`${SEO_CONFIG.baseUrl}/assets/images/og-image-contact.jpg`}
+      />
 
       {/* Space Background Elements */}
       <div className="fixed inset-0 z-0">

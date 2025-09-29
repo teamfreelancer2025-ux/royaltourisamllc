@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import { SEOHead } from '@/components/SEOHead';
 import { SEO_CONFIG } from '../config/seo';
 import { generateBreadcrumbSchema } from '../utils/seo';
 
@@ -10,7 +11,12 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
-      {/* The SEOHead component in main.tsx will handle global SEO */}
+      <SEOHead
+        title="About Us | Royal City Tourism"
+        description="Learn about our mission to provide the best luxury car rental and chauffeur services in Dubai."
+        canonicalUrl={`${SEO_CONFIG.baseUrl}/about`}
+        ogImage={`${SEO_CONFIG.baseUrl}/assets/images/og-image-about.jpg`}
+      />
 
       {/* Space Background Elements */}
       <div className="fixed inset-0 z-0">

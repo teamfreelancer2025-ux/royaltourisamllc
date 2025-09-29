@@ -1,4 +1,5 @@
 import FAQSection from "@/components/FAQSection";
+import { SEOHead } from '@/components/SEOHead';
 import { SEO_CONFIG } from '../config/seo';
 import { generateBreadcrumbSchema, generateFAQSchema } from '../utils/seo';
 
@@ -32,7 +33,12 @@ const FAQ = () => {
 
   return (
     <div className="min-h-screen bg-gradient-space relative overflow-hidden">
-      {/* The SEOHead component in main.tsx will handle global SEO */}
+      <SEOHead
+        title="Frequently Asked Questions | Royal City Tourism"
+        description="Find answers to common questions about our luxury car rental and chauffeur services in Dubai."
+        canonicalUrl={`${SEO_CONFIG.baseUrl}/faq`}
+        ogImage={`${SEO_CONFIG.baseUrl}/assets/images/og-image-faq.jpg`}
+      />
 
       {/* Space Background Elements */}
       <div className="fixed inset-0 z-0">
