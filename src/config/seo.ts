@@ -70,7 +70,7 @@ export const SEO_CONFIG = {
   phone: "+971588373992",
   whatsapp: "+971588373992",
   email: "info@royalcitytourism.com",
-  businessAddress: "Dubai, UAE",
+  businessAddress: "13 B St - Umm Suqeim - Umm Suqeim 1 - Dubai - United Arab Emirates",
   foundingYear: "2014",
   fleetSize: "200+",
   rating: "4.9",
@@ -83,7 +83,8 @@ export const SEO_CONFIG = {
     instagram: "https://instagram.com/royalcitytourism", 
     twitter: "https://twitter.com/royalcitytourism",
     linkedin: "https://linkedin.com/company/royalcitytourism",
-    youtube: "https://youtube.com/royalcitytourism"
+    youtube: "https://www.youtube.com/channel/UCFzsd7A7eBMlT8vW0XFBc9Q",
+    medium: "https://medium.com/@royalcitytourism5/welcome-to-royal-city-tourism-llc-15505e66ec77"
   },
   businessHours: {
     monday: "00:00-23:59",

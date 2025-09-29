@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { SEO_CONFIG } from '../config/seo';
-import { generateLocalBusinessSchema, generateCarRentalServiceSchema, generateWebsiteSchema, generateBreadcrumbSchema } from '../utils/seo';
+import { generateLocalBusinessSchema, generateCarRentalServiceSchema, generateWebsiteSchema } from '../utils/seo';
 
 interface SEOHeadProps {
   title?: string;
@@ -28,7 +28,7 @@ export const SEOHead = ({
   children
 }: SEOHeadProps) => {
   const finalTitle = title || SEO_CONFIG.defaultMeta.title;
-  const finalDescription = description || SEO_CONFIG.defaultMeta.description;
+  const finalDescription = description || SEO_CONFIG.defaultMeta.description || "Experience Dubai in luxury with Royal City Tourism. Your premier partner for high-end car rentals and professional chauffeur services across the UAE.";
   const finalKeywords = keywords.length > 0 ? keywords.join(', ') : SEO_CONFIG.defaultMeta.keywords.join(', ');
   const finalCanonicalUrl = canonicalUrl || SEO_CONFIG.baseUrl;
 
@@ -80,7 +80,7 @@ export const SEOHead = ({
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={`${finalTitle} - Dubai luxury car rental service`} />
         <meta property="og:locale" content="en_AE" />
-        <meta property="og:site_name" content={SEO_CONFIG.siteName} />
+        <meta property="og:site_name" content={SEO_CONFIG.siteName || "Royal City Tourism LLC"} />
         
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -88,8 +88,8 @@ export const SEOHead = ({
         <meta name="twitter:description" content={finalDescription} />
         <meta name="twitter:image" content={ogImage} />
         <meta name="twitter:image:alt" content={`${finalTitle} - Dubai luxury car rental`} />
-        <meta name="twitter:creator" content="@royalcitytourism" />
-        <meta name="twitter:site" content="@royalcitytourism" />
+        <meta name="twitter:creator" content={SEO_CONFIG.socialMedia.twitter.split('/').pop() || '@royalcitytourism'} />
+        <meta name="twitter:site" content={SEO_CONFIG.socialMedia.twitter.split('/').pop() || '@royalcitytourism'} />
         
         {/* Additional SEO Meta Tags */}
         <meta name="theme-color" content="#D4AF37" />
