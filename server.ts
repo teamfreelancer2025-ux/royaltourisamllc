@@ -13,7 +13,7 @@ process.env.MY_CUSTOM_SECRET = '42'; // replace with your own secret
 export async function createServer(
   root = process.cwd(),
   isProd = process.env.NODE_ENV === 'production',
-  hmrPort,
+  hmrPort?: number, // Explicitly type hmrPort
 ) {
   const resolve = (p: string) => path.resolve(__dirname, p);
 
@@ -52,7 +52,7 @@ export async function createServer(
     );
   }
 
-  app.use('*', async (req, res) => {
+  app.use('*', async (req: express.Request, res: express.Response) => {
     try {
       const url = req.originalUrl;
 
@@ -85,7 +85,7 @@ export async function createServer(
 }
 
 if (!isTest) {
-  createServer().then(({ app }) =>
+  createServer(undefined, true).then(({ app }) => // Pass true for isProd in production environment
     app.listen(6173, () => {
       console.log('http://localhost:6173');
     }),
