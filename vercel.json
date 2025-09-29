@@ -8,7 +8,6 @@
     }
   ],
   "routes": [
-    // Serve static client assets directly from dist/client (forced rewrite with comment)
     {
       "src": "/assets/(.*)",
       "dest": "/dist/client/assets/$1"
@@ -21,11 +20,9 @@
       "src": "/logo-premium.webp",
       "dest": "/dist/client/logo-premium.webp"
     },
-    // Route all other requests to the SSR serverless function
     {
       "src": "/(.*)",
       "dest": "dist-server/server.js"
     }
-  ],
-  "outputDirectory": "dist/client"
+  ]
 }

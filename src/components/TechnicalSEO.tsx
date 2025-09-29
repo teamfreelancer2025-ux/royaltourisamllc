@@ -3,17 +3,20 @@ import { useEffect } from 'react';
 // Technical SEO enhancements component
 export const TechnicalSEO = () => {
   useEffect(() => {
-    // Performance optimization script loader
-    const script = document.createElement('script');
-    script.src = '/performance-optimizer.js';
-    script.async = true;
-    document.body.appendChild(script);
+    // The following scripts were commented out because they do not exist in the project.
+    // This prevents 404 errors in the browser console.
 
-    // Google Analytics script loader (optional - if not already in index.html)
-    const gaScript = document.createElement('script');
-    gaScript.src = '/google-analytics.js'; // Assuming this is a local script
-    gaScript.async = true;
-    document.head.appendChild(gaScript);
+    // // Performance optimization script loader
+    // const script = document.createElement('script');
+    // script.src = '/performance-optimizer.js';
+    // script.async = true;
+    // document.body.appendChild(script);
+
+    // // Google Analytics script loader (already included in index.html)
+    // const gaScript = document.createElement('script');
+    // gaScript.src = '/google-analytics.js'; // Assuming this is a local script
+    // gaScript.async = true;
+    // document.head.appendChild(gaScript);
 
     const addStructuredData = (data: Record<string, unknown>, id: string) => {
       const script = document.createElement('script');
@@ -26,8 +29,8 @@ export const TechnicalSEO = () => {
     // Clean up function
     return () => {
       // Cleanup on unmount
-      const scripts = document.querySelectorAll('script[src*="performance-optimizer"], script[src*="google-analytics"]');
-      scripts.forEach(script => script.remove());
+      // const scripts = document.querySelectorAll('script[src*="performance-optimizer"], script[src*="google-analytics"]');
+      // scripts.forEach(script => script.remove());
     };
   }, []);
 
