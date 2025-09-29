@@ -6,9 +6,9 @@
       "use": "@vercel/static"
     },
     {
-      "src": "server.ts",
+      "src": "dist-server/server.js",
       "use": "@vercel/node",
-      "config": { "includeFiles": ["dist/**"] }
+      "config": { "includeFiles": ["dist/**", "dist-server/**"] }
     }
   ],
   "routes": [
@@ -18,7 +18,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "server.ts"
+      "dest": "dist-server/server.js"
     }
   ],
   "outputDirectory": "dist/client"

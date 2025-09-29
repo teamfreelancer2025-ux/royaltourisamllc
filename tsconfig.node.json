@@ -10,8 +10,10 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
-    "types": ["node"]
+    "types": ["node"],
+    "outDir": "./dist-server" // Output compiled server files here
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "server.ts"], // Include server.ts for compilation
+  "exclude": ["node_modules", "dist", "src", "public"]
 }
 
