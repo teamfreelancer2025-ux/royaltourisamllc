@@ -11,7 +11,11 @@ export default defineConfig({
     },
   },
   build: {
-    ssr: "src/entry-server.tsx", // Server-side entry point
+    ssr: 'src/entry-server.tsx',
+    rollupOptions: {
+      // Overwrite the default input
+      input: 'src/entry-server.tsx',
+    },
   },
 });
 
