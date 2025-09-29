@@ -11,6 +11,7 @@ import About from "./pages/About";
 import FAQ from "./pages/FAQ";
 import Reviews from "./pages/Reviews";
 import Contact from "./pages/Contact";
+import TestSSR from "./pages/TestSSR";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/faq" element={<FAQ />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/test-ssr" element={<TestSSR />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           </Routes>
           <Footer />
