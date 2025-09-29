@@ -13,6 +13,8 @@ interface SEOHeadProps {
   hreflangs?: Array<{ lang: string; url: string }>;
   noIndex?: boolean;
   children?: React.ReactNode;
+  ogImages?: { url: string; width: string; height: string; alt: string; }[];
+  twitterCard?: "summary" | "summary_large_image" | "app" | "player"; // Explicitly define Twitter Card types
 }
 
 export const SEOHead = ({
@@ -25,7 +27,8 @@ export const SEOHead = ({
   structuredData = [],
   hreflangs = [],
   noIndex = false,
-  children
+  children,
+  twitterCard
 }: SEOHeadProps) => {
   const finalTitle = title || SEO_CONFIG.defaultMeta.title;
   const finalDescription = description || SEO_CONFIG.defaultMeta.description || "Experience Dubai in luxury with Royal City Tourism. Your premier partner for high-end car rentals and professional chauffeur services across the UAE.";
@@ -82,8 +85,8 @@ export const SEOHead = ({
         <meta property="og:locale" content="en_AE" />
         <meta property="og:site_name" content={SEO_CONFIG.siteName || "Royal City Tourism LLC"} />
         
-        {/* Twitter Card Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
+        {/* Twitter Card Meta Tags (for Twitter previews) */}
+        <meta name="twitter:card" content={twitterCard || "summary_large_image"} /> {/* Ensure a fallback for twitter:card */}
         <meta name="twitter:title" content={fullTitle} />
         <meta name="twitter:description" content={finalDescription} />
         <meta name="twitter:image" content={ogImage} />
