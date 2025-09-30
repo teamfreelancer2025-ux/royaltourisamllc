@@ -9,6 +9,7 @@ interface SEOHeadProps {
   canonicalUrl?: string;
   ogImage?: string;
   ogType?: string;
+  schemas?: Array<Record<string, any>>;
   structuredData?: any[];
   hreflangs?: Array<{ lang: string; url: string }>;
   noIndex?: boolean;
@@ -90,6 +91,13 @@ export const SEOHead = ({
         <meta property="og:image:alt" content={`${finalTitle} - Luxury Car Rental Dubai`} />
         <meta property="og:locale" content="en_AE" />
         <meta property="og:updated_time" content={new Date().toISOString()} />
+        
+        {/* Schema.org Structured Data */}
+        {defaultStructuredData.map((schema, index) => (
+          <script key={index} type="application/ld+json">
+            {JSON.stringify(schema)}
+          </script>
+        ))}
         
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content={twitterCard} />

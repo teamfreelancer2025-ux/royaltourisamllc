@@ -162,7 +162,7 @@ const DubaiCarousel = () => {
               alt={slide.title}
               width="1200"
               height="630"
-              fetchPriority={index === 0 ? "high" : "auto"}
+              fetchpriority={index === 0 ? "high" : "auto"}
               loading={index === 0 ? "eager" : "lazy"}
               className="absolute inset-0 w-full h-full object-cover"
             />

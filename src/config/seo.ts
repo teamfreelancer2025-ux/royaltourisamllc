@@ -82,9 +82,9 @@ export const SEO_CONFIG = {
   timezone: "Asia/Dubai",
   socialMedia: {
     facebook: "https://www.facebook.com/royalcitytourism/",
-    instagram: "https://www.instagram.com/royalcitytourism/", 
+    instagram: "https://www.instagram.com/royalcitytourisms/", 
     twitter: "https://twitter.com/royalcitytourism",
-    linkedin: "https://linkedin.com/company/royalcitytourism",
+    linkedin: "https://www.linkedin.com/in/royalcitytourism-llc-8b8787387/",
     youtube: "https://www.youtube.com/channel/UCFzsd7A7eBMlT8vW0XFBc9Q",
     medium: "https://medium.com/@royalcitytourism5/welcome-to-royal-city-tourism-llc-15505e66ec77"
   },

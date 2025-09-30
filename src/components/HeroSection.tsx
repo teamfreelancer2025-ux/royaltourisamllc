@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
 import DubaiCarousel from "@/components/DubaiCarousel";
+import SocialLinks from "@/components/SocialLinks";
 
 const HeroSection = () => {
   const callNow = () => {
@@ -31,11 +32,16 @@ const HeroSection = () => {
             <div className="w-full space-y-4 sm:space-y-6 order-1 lg:order-2 animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <div className="text-center lg:text-left">
                 <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 leading-tight">
-                  Experience Dubai in Luxury with Royal City Tourism
+                  Luxury Car Rental & Chauffeur Service in Dubai
                 </h1>
-                <p className="text-muted-foreground mb-8 text-lg max-w-lg mx-auto lg:mx-0">
-                  Your premier partner for luxury car rentals and chauffeur services in Dubai and across the UAE.
+                <p className="text-muted-foreground mb-4 text-lg max-w-lg mx-auto lg:mx-0">
+                  Experience Dubai in unmatched luxury with Royal City Tourism. Professional chauffeurs, premium fleet, and 24/7 service across UAE.
                 </p>
+                <div className="text-primary text-sm md:text-base font-medium mb-8">
+                  <p>✓ Mercedes S-Class, BMW 7 Series & Premium Fleet</p>
+                  <p>✓ Professional Chauffeurs & 24/7 Service</p>
+                  <p>✓ Airport Transfers & City Tours</p>
+                </div>
               </div>
 
               <div className="flex flex-col gap-4 max-w-md mx-auto lg:mx-0">
@@ -57,6 +63,11 @@ const HeroSection = () => {
                   <Phone className="w-5 h-5" />
                   CALL NOW: +971 58 837 3992
                 </Button>
+
+                {/* Social Media Links */}
+                <div className="mt-6 flex justify-center lg:justify-start">
+                  <SocialLinks />
+                </div>
               </div>
             </div>
 

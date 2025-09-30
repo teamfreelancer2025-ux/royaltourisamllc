@@ -27,6 +27,21 @@ export const generateWebsiteSchema = () => ({
   }
 });
 
+export const generateOrganizationSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${SEO_CONFIG.baseUrl}#organization`,
+  "name": SEO_CONFIG.siteName,
+  "url": SEO_CONFIG.baseUrl,
+  "logo": `${SEO_CONFIG.baseUrl}/logo-premium.webp`,
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": SEO_CONFIG.phone,
+    "contactType": "customer service"
+  },
+  "sameAs": Object.values(SEO_CONFIG.socialMedia)
+});
+
 // Generate structured data for car rental services
 export const generateCarRentalSchema = (cars: any[]) => ({
   "@context": "https://schema.org",
@@ -179,7 +194,7 @@ export const generateCarRentalServiceSchema = () => ({
   }
 });
 
-export const generateBreadcrumbSchema = (items: Array<{name: string, url: string}>) => ({
+export const generateBreadcrumbSchema = (items: { name: string; url: string }[]) => ({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": items.map((item, index) => ({
