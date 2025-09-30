@@ -57,13 +57,15 @@ export const SEO_CONFIG = {
   siteName: "Royal City Tourism LLC",
   baseUrl: "https://royalcitytourism.com",
   defaultMeta: {
-    title: "Royal City Tourism - Luxury Car Rental & Chauffeur Service in Dubai",
-    description: "Experience Dubai in luxury with Royal City Tourism. Your premier partner for high-end car rentals and professional chauffeur services across the UAE.",
+    title: "Luxury Car Rental Dubai | Premium Chauffeur Services UAE",
+    description: "Experience Dubai's finest luxury car rental service. Professional chauffeurs, Mercedes, BMW & premium fleet. 24/7 service across UAE. Book now!",
     keywords: [
       "luxury car rental Dubai",
       "chauffeur service Dubai",
-      "Dubai tourism",
-      "premium car hire UAE",
+      "Dubai car hire",
+      "premium car rental UAE",
+      "Mercedes rental Dubai",
+      "BMW rental Dubai",
       ...DUBAI_KEYWORDS.primary
     ]
   },
