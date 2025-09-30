@@ -14,7 +14,7 @@ interface SEOHeadProps {
   noIndex?: boolean;
   children?: React.ReactNode;
   ogImages?: { url: string; width: string; height: string; alt: string; }[];
-  twitterCard?: "summary" | "summary_large_image" | "app" | "player"; // Explicitly define Twitter Card types
+  twitterCard?: "summary" | "summary_large_image" | "app" | "player";
 }
 
 export const SEOHead = ({
@@ -22,18 +22,21 @@ export const SEOHead = ({
   description,
   keywords = [],
   canonicalUrl,
-  ogImage = `${SEO_CONFIG.baseUrl}/dubai-luxury-hero.webp`,
+  ogImage,
   ogType = "website",
   structuredData = [],
   hreflangs = [],
   noIndex = false,
   children,
-  twitterCard
+  twitterCard = "summary_large_image"
 }: SEOHeadProps) => {
   const finalTitle = title || SEO_CONFIG.defaultMeta.title;
-  const finalDescription = description || SEO_CONFIG.defaultMeta.description || "Experience Dubai in luxury with Royal City Tourism. Your premier partner for high-end car rentals and professional chauffeur services across the UAE.";
+  const finalDescription = description || SEO_CONFIG.defaultMeta.description;
   const finalKeywords = keywords.length > 0 ? keywords.join(', ') : SEO_CONFIG.defaultMeta.keywords.join(', ');
   const finalCanonicalUrl = canonicalUrl || SEO_CONFIG.baseUrl;
+  const finalOgImage = ogImage ? 
+    (ogImage.startsWith('http') ? ogImage : `${SEO_CONFIG.baseUrl}${ogImage.startsWith('/') ? '' : '/'}${ogImage}`) : 
+    `${SEO_CONFIG.baseUrl}/dubai-luxury-hero.webp`;
 
   const fullTitle = finalTitle.includes(SEO_CONFIG.siteName) ? finalTitle : `${finalTitle} | ${SEO_CONFIG.siteName}`;
   
@@ -73,31 +76,31 @@ export const SEOHead = ({
         ))}
         <link rel="alternate" hrefLang="x-default" href={SEO_CONFIG.baseUrl} />
         
-        {/* Open Graph Meta Tags - Optimized for Social Sharing */}
+        {/* Open Graph Meta Tags */}
+        <meta property="og:site_name" content={SEO_CONFIG.siteName} />
         <meta property="og:title" content={fullTitle.length > 60 ? fullTitle.substring(0, 57) + '...' : fullTitle} />
         <meta property="og:description" content={finalDescription.length > 130 ? finalDescription.substring(0, 127) + '...' : finalDescription} />
         <meta property="og:type" content={ogType} />
         <meta property="og:url" content={finalCanonicalUrl} />
-        <meta property="og:image" content={ogImage} />
-        <meta property="og:image:secure_url" content={ogImage} />
+        <meta property="og:image" content={finalOgImage} />
+        <meta property="og:image:secure_url" content={finalOgImage} />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={`${finalTitle} - Luxury Car Rental Dubai`} />
         <meta property="og:locale" content="en_AE" />
-        <meta property="og:site_name" content={SEO_CONFIG.siteName} />
         <meta property="og:updated_time" content={new Date().toISOString()} />
         
-        {/* Twitter Card Meta Tags - Enhanced for Better Previews */}
-        <meta name="twitter:card" content="summary_large_image" />
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content={twitterCard} />
+        <meta name="twitter:site" content="@royalcitytourism" />
+        <meta name="twitter:creator" content="@royalcitytourism" />
+        <meta name="twitter:title" content={fullTitle.length > 60 ? fullTitle.substring(0, 57) + '...' : fullTitle} />
+        <meta name="twitter:description" content={finalDescription.length > 200 ? finalDescription.substring(0, 197) + '...' : finalDescription} />
+        <meta name="twitter:image" content={finalOgImage} />
+        <meta name="twitter:image:alt" content={`${finalTitle} - Luxury Car Rental Dubai`} />
         <meta name="twitter:domain" content={new URL(SEO_CONFIG.baseUrl).hostname} />
         <meta name="twitter:url" content={finalCanonicalUrl} />
-        <meta name="twitter:title" content={fullTitle.length > 60 ? fullTitle.substring(0, 57) + '...' : fullTitle} />
-        <meta name="twitter:description" content={finalDescription.length > 130 ? finalDescription.substring(0, 127) + '...' : finalDescription} />
-        <meta name="twitter:image" content={ogImage} />
-        <meta name="twitter:image:alt" content={`${finalTitle} - Luxury Car Rental Dubai`} />
-        <meta name="twitter:creator" content="@royalcitytourism" />
-        <meta name="twitter:site" content="@royalcitytourism" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="theme-color" content="#D4AF37" />
@@ -117,8 +120,8 @@ export const SEOHead = ({
           </script>
         ))}
         
-        {/* Preload Hero Image for better performance */}
-        <link rel="preload" as="image" href="/dubai-luxury-hero.webp" />
+        {/* Preload Hero Image */}
+        <link rel="preload" as="image" href={`${SEO_CONFIG.baseUrl}/dubai-luxury-hero.webp`} />
         
         {/* DNS Prefetch */}
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
@@ -129,4 +132,5 @@ export const SEOHead = ({
     </>
   );
 };
+
 export default SEOHead;
