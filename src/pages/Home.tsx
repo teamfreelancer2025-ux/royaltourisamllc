@@ -4,8 +4,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { SEO_CONFIG } from '../config/seo';
 import { 
   generateBreadcrumbSchema, 
-  generateOrganizationSchema, 
-  generateLocalBusinessSchema,
+  generateOrganizationSchema,
   generateCarRentalSchema 
 } from '../utils/seo';
 
@@ -16,7 +15,6 @@ const Home = () => {
   const schemas = [
     generateBreadcrumbSchema([{ name: "Home", url: SEO_CONFIG.baseUrl }]),
     generateOrganizationSchema(),
-    generateLocalBusinessSchema(),
     generateCarRentalSchema([])
   ];
   

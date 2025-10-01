@@ -99,35 +99,6 @@ export const SEOHead = ({
           </script>
         ))}
         
-        {/* Twitter Card Meta Tags */}
-        <meta name="twitter:card" content={twitterCard} />
-        <meta name="twitter:site" content="@royalcitytourism" />
-        <meta name="twitter:creator" content="@royalcitytourism" />
-        <meta name="twitter:title" content={fullTitle.length > 60 ? fullTitle.substring(0, 57) + '...' : fullTitle} />
-        <meta name="twitter:description" content={finalDescription.length > 200 ? finalDescription.substring(0, 197) + '...' : finalDescription} />
-        <meta name="twitter:image" content={finalOgImage} />
-        <meta name="twitter:image:alt" content={`${finalTitle} - Luxury Car Rental Dubai`} />
-        <meta name="twitter:domain" content={new URL(SEO_CONFIG.baseUrl).hostname} />
-        <meta name="twitter:url" content={finalCanonicalUrl} />
-        
-        {/* Additional SEO Meta Tags */}
-        <meta name="theme-color" content="#D4AF37" />
-        <meta name="msapplication-TileColor" content="#D4AF37" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="format-detection" content="telephone=yes" />
-        
-        {/* Performance and Security */}
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="referrer" content="strict-origin-when-cross-origin" />
-        
-        {/* Structured Data */}
-        {defaultStructuredData.map((schema, index) => (
-          <script key={index} type="application/ld+json">
-            {JSON.stringify(schema)}
-          </script>
-        ))}
-        
         {/* Preload Hero Image */}
         <link rel="preload" as="image" href={`${SEO_CONFIG.baseUrl}/dubai-luxury-hero.webp`} />
         
